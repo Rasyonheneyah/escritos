@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*--- Paleta de Cores ---
+
+Fundo principal	Marrom escuro	#3B2F2F	Fundo tipo couro envelhecido
+Fundo secundário	Madeira queimada	#4B3621	Pra áreas destacadas (menus, rodapé)
+Blocos/caixas	Marrom amarelado	#6B4F3B	Caixa de conteúdo
+Texto principal	Pergaminho claro	#F5DEB3	Bem legível e estiloso
+Título/destaques	Ouro envelhecido	#C19A6B	Brilha sem ser chamativo
+Acento forte (botões)	Castanho avermelhado	#8B4513	icônico
+Linha/sombra leve	Bege escuro	#A67B5B	Ajuda a destacar sem pesar
+Link ativo	Azul fosco	#4C5B5C	Um azul acinzentado que combina bem
+Verde oliva seco	#767B46	Parece tecido militar antigo ou tapeçaria medieval
+Areia envelhecida	#D2B48C	Um tom claro, suave, perfeito pra contrastes leves ou fundo de textos
+Caramelo queimado	#A0522D	Lembra couro tratado, ótimo pra botões ou links
+Azul tempestade	#3C4E59	Azul profundo, dá um ar mais misterioso e medieval
+Violeta desbotado	#5D4A66	Traz nobreza, ótimo pra detalhes em brasões, ícones ou rodapés
+Marfim sujo	#EAE3D2	Ideal pra planos de fundo “tipo pergaminho usado”
+Vermelho barro	#9B4842	Forte, terroso e com personalidade, bom pra destaques mais dramáticos
+Petróleo suave	#4A5A50	Um verde-azulado frio, usado em sombras ou menus laterais
+Bronze fosco	#B08D57	Mais claro que o dourado comum, ótimo pra ícones ou bordas
+Marrom titulo #b17c2e
+*/
+
+@font-face {
+    font-family: 'Medieval Sharp';
+    src: url(./fontes/MedievalSharp-Regular.ttf);
+}
+
+
+
+body{
+    background-color:#F5DEB3 ;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%; /*Ocupar toda tela*/
+    margin: 0;
+}
+
+/*Cobrir toda a Tela*/
+header,footer{
+    left: 0;
+    right: 0;
+    width: 100%;
+    
+}
+
+
+header{
+    background-color: #767B46;
+    top: 0;
+    position: fixed; /*Vai junto quando for para baixo*/
+    height: 65px; /*Tamanho que parece razoável*/
+    margin:0; 
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
+}
+header>div{
+    /*comando aleatório para não aparecer q tem erro e dar pra manter ele*/
+    image-rendering: o;
+}
+
+#tituloheader{
+    font-family: 'Medieval Sharp';
+    font-size: 50px ;
+    color: #b17c2e;
+    text-shadow: 1px 1px 1px #4b3621d5;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    margin: 7.5px 10px; /*Para a height chegar em 65 igual do header e alinhar no meio*/
+
+}
+
+nav{
+    margin: 0;
+    width: 45px;
+
+}
+
+.headeraltura{
+    height: 65px; /*Tamanho que parece razoável*/
+}
+
+/* ☰ = hamburguer */
+#hamburguer{
+    font-size: 45px;
+    color: #b17c2e;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 10px; /*espaço para nao ficar coladona esquerda*/
+}
+#hamburguer:visited{
+    text-decoration: none;
+}
+
+#hamburguer:active{
+    text-decoration: none;
+    color: #b17c2e;
+}
+
+#hamburguer:hover{
+    color: #5D4A66;
+}
+
+#headergeral{
+    height: 65px; /*Tamanho que parece razoável*/
+    display: flex; /*Ficarem em linha reta*/
+
+}
+
+#headerlogotitulo{
+    width: 100%; /*Tam do logo + titulo (um pouco mais)*/
+    padding: 0 0 0 10px;
+    display: flex ; /*Já vai ficando na mesma linha*/
+    align-items: center; /*Alinha no meio*/
+}
+
+.logosite{
+    background-image: url(./logo2.png);
+    background-position: center; /*Centraliza imagem*/
+    background-size: cover; /*Cobrir todo o espaço*/
+    height: 50px;
+    width: 58px; /*Proporção com regra de três*/
+    display: flex; /*Faz virar flexível*/
+    background-repeat: no-repeat; /*Não repete a imagem no fundo*/
+    margin: 7.5px 0; /*Para a height chegar em 65 igual do header e alinhar no meio*/
+    flex-shrink: 0; /*NÃO DEIXA ENCOLHER O ABENÇOADO!
+    controla a capacidade de encolher do elemento flexível quando o espaço disponível é menor que o tamanho do conteúdo.
+    Se o valor for 0, o elemento não encolhe. Se for 1, ele encolhe proporcionalmente ao tamanho do conteúdo. */
+
+}
+
+
+main {
+    margin: 5em 0 0 0;
+}
+  
+
+footer{
+    background-color: #5D4A66;
+    bottom:0;
+    height: 125px;
+    width: 100%;
+    margin: 2.5em 0em 0em 0em;
+    
+}

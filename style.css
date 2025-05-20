@@ -52,6 +52,7 @@ header{
     height: 65px; /*Tamanho que parece razoável*/
     margin:0; 
     box-shadow: 1px 1px 3px #0000006c;
+    z-index: 1; /*Fica em cima de tudo*/
 }
 
 #tituloheader{
@@ -155,6 +156,13 @@ h2{
     text-align: center;
     font-size: 40px;
     font-family: 'Medieval Sharp'; ;
+    text-shadow: 1px 2px 3px #0000009c;
+}
+h2:hover{
+    background-image: linear-gradient(to bottom,transparent,#5d4a6621 ,#5d4a664f, #5d4a669d ,#5d4a664f , #5d4a6621, transparent);
+    border-radius: 50px;
+    box-shadow: 0 0 10px #000d1d34;
+    cursor: pointer; /*Muda o cursor para a mãozinha*/
 }
 
 h3{
@@ -191,6 +199,13 @@ main a{
     box-shadow: 1px 1px 15px #daa5209a;
     margin: 0 auto; /*Para centralizar*/
     display: block; /*Para centralizar*/
+
+}
+.imagem:hover{
+    box-shadow: 1px 1px 15px #DAA520;
+    transform: scale(1.025); /*Aumenta a imagem*/
+    transition: all 0.5s ease-in-out; /*Transição suave*/
+    cursor: pointer; /*Muda o cursor para a mãozinha*/
 }
 
 footer{
@@ -252,3 +267,41 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
     border-radius: 50%;
     
 }
+
+
+/*
+@media screen and (max-width: 600px) {
+    header{
+        height: 5em; /*Tamanho que parece razoável*
+    }
+    .headeraltura{
+        height: 2em; /*Tamanho que parece razoável*
+    }
+    #headergeral{
+        height: 5em; /*Tamanho que parece razoável*
+        gap: 0.5em;
+    }
+    .logosite{
+        height: 60px;
+        width: 68px; /*Proporção com regra de três*
+        margin: 10px 0; /*Para a height chegar em 80 igual do header e alinhar no meio*
+    }
+    #espacoentre{
+        height: 110px;
+    }
+    #tituloheader{
+        font-size: 65px ;
+    }
+    h1{
+        font-size: 55px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    main p{
+        font-size: 20px;
+    }
+}*/

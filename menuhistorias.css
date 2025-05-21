@@ -1,1 +1,93 @@
 @charset "UTF-8";
+
+
+
+.listhistoria{
+    list-style-type: none;
+}
+
+
+h2{
+    color: #3C4E59;
+    text-align: left;
+    text-indent: 20px ;
+}
+p{
+    padding: 0 20px;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+
+
+.caixadehistoria{
+    height: fit-content; /* Ajusta a altura do elemento para caber o conteúdo */
+    gap: 5.5%;
+    display: flex;
+    flex-direction: vertical;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*tabela de arcos e capítulos*/
+caption{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3C4E59;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+table {
+    box-shadow: 1px 1px 2px #00000052;
+}
+
+.tabela_capitulos {
+    overflow: visible;
+    width: 45%;
+    height: fit-content;
+}
+
+.tabela_capitulos table {
+    border: 1px solid #b17c2e;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    text-align: center;
+}
+
+.tabela_capitulos caption {
+    caption-side: top;
+    text-align: left;
+    
+}
+
+.tabela_capitulos th {
+    border: 1px solid #767B46;
+    background-color: #C19A6B;
+    color: #5D4A66;
+    padding: 5px;
+    font-size: 120%;
+}
+
+.tabela_capitulos td {
+    border: 1px solid #767B46;
+    background-color: #D2B48C;
+    color: #767B46;
+    padding: 5px;
+    font-weight: bold;
+}
+
+td>div>a{
+    color:#767B46;
+}
+td>div>a:hover{
+    text-decoration: none;
+    color:#9B4842 ;
+}

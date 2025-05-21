@@ -159,9 +159,7 @@ h2{
     text-shadow: 1px 2px 3px #0000009c;
 }
 h2:hover{
-    background-image: linear-gradient(to bottom,transparent,#5d4a6621 ,#5d4a664f, #5d4a669d ,#5d4a664f , #5d4a6621, transparent);
-    border-radius: 50px;
-    box-shadow: 0 0 10px #000d1d34;
+    color: #5D4A66;
     cursor: pointer; /*Muda o cursor para a mãozinha*/
 }
 
@@ -188,7 +186,7 @@ main p{ /*o espaço é para aplicar nos P que tão no MAIN*/
     text-indent: 3em;
 }
 
-main a{
+p>a{
     text-decoration: none;
     color: #9e6f29;
 }
@@ -266,6 +264,13 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
     width: 35px; 
     border-radius: 50%;
     
+}
+/*Não poder copiar o texto*/
+.no-copy {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 

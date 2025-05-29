@@ -63,6 +63,7 @@ header{
     width: 100%;
     height: 50px;
     margin: 7.5px 10px; /*Para a height chegar em 65 igual do header e alinhar no meio*/
+    max-width: fit-content;
 
 }
 
@@ -297,3 +298,71 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
   -ms-user-select: none;
 }
 
+@media only screen and (max-width:768px){
+
+    header, .headeraltura, .headergeral{
+        height: 130px;
+    }
+    #tituloheader {
+        height:100px;
+        margin: 15px 20px;
+        font-size: 100px;
+        
+    }
+
+    nav > ul{
+        gap: 10px;
+
+    }
+
+
+    .botao-nav{
+        padding: 20px;
+        font-size: 40px;
+        gap: 20px;
+    }
+
+    #hamburguer{
+        font-size: 90px;
+
+    }
+
+    .nav-principal ul{
+        padding:20px;
+    }
+
+    #headerlogotitulo{
+        padding: 0 0 0 30px;
+    }
+
+    .logosite{
+        height:100px;
+        width: 116px;
+        margin: 15px 0;
+    }
+
+    #espacoentre{
+        height: 180px;
+    }
+
+    footer, #footergeral{
+        height: 300px;
+    }
+    footer p{
+        font-size: 36px;
+    }
+    #footerconteudo{
+        gap: 30px;
+        height: 260px;
+        padding-left: 30px;
+        padding-top:30px;
+    }
+    #footerico{
+        height: 100px;
+        gap: 10px;
+    }
+    #icoautor{
+        height: 70px;
+        width: 70px;
+    }
+}

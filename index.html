@@ -18,14 +18,25 @@
     <!-- Padrão 2-->
     <title>Home - Escritos de Rasyon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="padrao.css">
     <link rel="icon" href="logo1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 </head>
 <body>
     <header>
         <div id="headergeral">
-            <nav>
-                <a id="hamburguer" class="headeraltura" href="#">☰</a>          
-            </nav>
+            <div class="menu">
+                <button id="hamburguer" class="headeraltura" onclick="toggleMenu()">☰</button>
+                <nav class="nav-principal">
+                    <ul class="">
+                        <li><a class="botao-nav" href="index.html"><span class="material-symbols-outlined">home</span>Início</a></li>
+                        <li><a class="botao-nav" href="historias.html"><span class="material-symbols-outlined">auto_stories</span>Histórias</a></li>
+                        <li><a class="botao-nav" href="poemas.html"><span class="material-symbols-outlined">ink_pen</span>Poemas</a></li>
+                        <li><a class="botao-nav" href="cartas.html"><span class="material-symbols-outlined">history_edu</span>Cartas</a></li>
+                        <li><a class="botao-nav" href="autor.html"><span class="material-symbols-outlined">person</span>Autor</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="headerlogotitulo">
                 
                 <span class="logosite"></span>
@@ -35,34 +46,33 @@
     </header>
     <div id="espacoentre"></div>
     <main>
-        <h1>Os Escritos de Rasyon</h1>
-        <p>Seja bem-vindo(a)! Neste site você encontrar escritos meus, seja de histórias, poemas, reflexões, conceitos, basicamente qualquer coisa que eu escreva e opte por postar aqui. Espero que você goste dele. Pretendo escrever histórias de todos os tipos, desde literatura infantil (embora esta demore mais) à literatura adulta, como a minha história principal atualmente, que será dmostrada abaixo. Tenho alguns poemas relacionados a conteúdos diversos baseado em reflexões. Além de que terá escritos de cunho religioso também no site.  </p>
-        
-        <a href="historias.html">
-            <h2>Histórias</h2>
-        </a>
-        <p>
-            <p>As histórias foram o motor inicial para este síte que criei, o objetivo sempre foi publicar algumas histórias que eu escrevesse, para que as pessoas pudessem ler. Contudo, avancei no propósito, para reunir qualquer escrito meu que eu deseje colocar aqui. Como falei no começo do site, pretendo criar histórias para o público infantil com certos ensinamentos, tendo em vista que isto é algo que infelizmente está se perdendo. As histórias são de grande importância para o desenvolvimento das crianças, é uma forma ludíca delas aprenderem e desenvolverem sua curiosidade e imaginação. Os adultos também podem aprender e muito com as histórias, além de que é uma excelente forma de entretenimento, apresento a vocês a minha atual história principal <a href="#">O Mundo Precisa de Razão</a> que você poderá lê-la em breve e está abaixo.   </p>
-        </p>
-
-        <h3>O Mundo Precisa de Razão</h3>
-        <p>O Mundo Precisa de Razão é a história principal que tenho desenvolvido e não pretendo encerrá-la tão cedo. Ela se passa em um mundo diferente do nosso, no ano de 2030, especificamente no país. Há pessoas que ganham habilidades especiais congenitamente, assim como há artefatos que também possuem habilidades especiais. O foco da história é em Rasyon, que não ironicamente se assemelha com razão, mas por outro motivo além desse. Ele criou uma organização que batalha contra o mal, não da forma mais ética possível como poderia, mas usando os métodos que lhe pareceram eficientes. A história se inicia com o convite do misterioso mascarado realizado à um jovem advogado chamado Próguito que não estava no melhor de seus dias. Além disso, é apresentado o nome Kaidólos, uma figura, seja pessoa ou organização, que permanecem ocultos e controlam o mundo através da poderosa mão forte e invisível. A história retrata este embate e os embates ocasionados no caminho através do choque entre a visão de mundo dos demais personagens.          </p>
-            <picture>
-                <source media="(max-width: 792px )" srcset="imagens/painelmenor.jpg" type="image/jpg">
-                <source media="(max-width: 989px )" srcset="imagens/painelmedio.jpg" type="image/jpg">
-                <img class="imagem" src="imagens/painel.jpg" alt="imagem flexível">
-            </picture>
-
-        <a href="poemas.html">
-            <h2 class="poema">Poemas</h2>
-        </a>
-        <p>Eu Gosto de fazer poemas, por isso vou postá-los alguns aqui. Não os faço com frequência, então é provável que tenha bem poucos. A poesia é uma ótima forma de expressar seus sentimentos a cerca das determinadas coisas da vida, do amor à morte, agradecimentos à Deus, ou qualquer coisa que seja.   </p>
-        
-        <a href="cartas.html">
-            <h2 class="carta">Cartas</h2>
-        </a>
-        <p>Aqui você vera os meus escritos que possuem cunho religioso, a maioria a cerca da Bíblia, ou de determinadas doutrinas ou eventos, basicamente no geral realcionada ao cristianismo. O nome para essa aba de "cartas" foi inspirado nas cartas do apóstolo Paulo, destinada às variadas igrejas, que compoem grande parte do Novo Testamento. Espero que lhe sejam úteis em ensino e peço que você dê uma chance para essas "cartas". Claro que também aceito correções, pois não estou insento de erro, então se você notar algum, contate-me para que eu o corrija.</p>
-
+        <article>
+            <h1>Os Escritos de Rasyon</h1>
+            <p>Seja bem-vindo(a)! Neste site você encontrar escritos meus, seja de histórias, poemas, reflexões, conceitos, basicamente qualquer coisa que eu escreva e opte por postar aqui. Espero que você goste dele. Pretendo escrever histórias de todos os tipos, desde literatura infantil (embora esta demore mais) à literatura adulta, como a minha história principal atualmente, que será dmostrada abaixo. Tenho alguns poemas relacionados a conteúdos diversos baseado em reflexões. Além de que terá escritos de cunho religioso também no site.  </p>
+            
+            <a href="historias.html">
+                <h2 class="historia">Histórias</h2>
+            </a>
+            <p>
+                <p>As histórias foram o motor inicial para este síte que criei, o objetivo sempre foi publicar algumas histórias que eu escrevesse, para que as pessoas pudessem ler. Contudo, avancei no propósito, para reunir qualquer escrito meu que eu deseje colocar aqui. Como falei no começo do site, pretendo criar histórias para o público infantil com certos ensinamentos, tendo em vista que isto é algo que infelizmente está se perdendo. As histórias são de grande importância para o desenvolvimento das crianças, é uma forma ludíca delas aprenderem e desenvolverem sua curiosidade e imaginação. Os adultos também podem aprender e muito com as histórias, além de que é uma excelente forma de entretenimento, apresento a vocês a minha atual história principal <a href="#">O Mundo Precisa de Razão</a> que você poderá lê-la em breve e está abaixo.   </p>
+            </p>
+            <h3>O Mundo Precisa de Razão</h3>
+            <p>O Mundo Precisa de Razão é a história principal que tenho desenvolvido e não pretendo encerrá-la tão cedo. Ela se passa em um mundo diferente do nosso, no ano de 2030, especificamente no país. Há pessoas que ganham habilidades especiais congenitamente, assim como há artefatos que também possuem habilidades especiais. O foco da história é em Rasyon, que não ironicamente se assemelha com razão, mas por outro motivo além desse. Ele criou uma organização que batalha contra o mal, não da forma mais ética possível como poderia, mas usando os métodos que lhe pareceram eficientes. A história se inicia com o convite do misterioso mascarado realizado à um jovem advogado chamado Próguito que não estava no melhor de seus dias. Além disso, é apresentado o nome Kaidólos, uma figura, seja pessoa ou organização, que permanecem ocultos e controlam o mundo através da poderosa mão forte e invisível. A história retrata este embate e os embates ocasionados no caminho através do choque entre a visão de mundo dos demais personagens.          </p>
+                <picture>
+                    <source media="(max-width: 792px )" srcset="imagens/painelmenor.jpg" type="image/jpg">
+                    <source media="(max-width: 989px )" srcset="imagens/painelmedio.jpg" type="image/jpg">
+                    <img class="imagem" src="imagens/painel.jpg" alt="imagem flexível">
+                </picture>
+            <a href="poemas.html">
+                <h2 class="poema">Poemas</h2>
+            </a>
+            <p>Eu Gosto de fazer poemas, por isso vou postá-los alguns aqui. Não os faço com frequência, então é provável que tenha bem poucos. A poesia é uma ótima forma de expressar seus sentimentos a cerca das determinadas coisas da vida, do amor à morte, agradecimentos à Deus, ou qualquer coisa que seja.   </p>
+            
+            <a href="cartas.html">
+                <h2 class="carta">Cartas</h2>
+            </a>
+            <p>Aqui você vera os meus escritos que possuem cunho religioso, a maioria a cerca da Bíblia, ou de determinadas doutrinas ou eventos, basicamente no geral realcionada ao cristianismo. O nome para essa aba de "cartas" foi inspirado nas cartas do apóstolo Paulo, destinada às variadas igrejas, que compoem grande parte do Novo Testamento. Espero que lhe sejam úteis em ensino e peço que você dê uma chance para essas "cartas". Claro que também aceito correções, pois não estou insento de erro, então se você notar algum, contate-me para que eu o corrija.</p>
+        </article>
     </main>
 
     <div id="espacoentre"></div>
@@ -89,6 +99,7 @@
         </div>     
 
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>

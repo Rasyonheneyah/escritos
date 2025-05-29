@@ -17,16 +17,28 @@
     <link rel="canonical" href="https://rasyonheneyah.github.io/escritos/"> <!-- URL canônica da página -->
     <!-- Padrão 2-->
     <title>Cartas - Escritos de Rasyon</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="padrao.css">
+    <link rel="stylesheet" href="menuhistorias.css">
     <link rel="stylesheet" href="cartas.css">
     <link rel="icon" href="logo1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
 </head>
 <body>
     <header>
         <div id="headergeral">
-            <nav>
-                <a id="hamburguer" class="headeraltura" href="#">☰</a>          
-            </nav>
+            <div class="menu">
+                <button id="hamburguer" class="headeraltura" onclick="toggleMenu()">☰</button>
+                <nav class="nav-principal">
+                    <ul class="">
+                        <li><a class="botao-nav" href="index.html"><span class="material-symbols-outlined">home</span>Início</a></li>
+                        <li><a class="botao-nav" href="historias.html"><span class="material-symbols-outlined">auto_stories</span>Histórias</a></li>
+                        <li><a class="botao-nav" href="poemas.html"><span class="material-symbols-outlined">ink_pen</span>Poemas</a></li>
+                        <li><a class="botao-nav" href="cartas.html"><span class="material-symbols-outlined">history_edu</span>Cartas</a></li>
+                        <li><a class="botao-nav" href="autor.html"><span class="material-symbols-outlined">person</span>Autor</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="headerlogotitulo">
                 
                 <span class="logosite"></span>
@@ -35,40 +47,98 @@
         </div>
     </header>
     <div id="espacoentre"></div>
-    <main>
-        <div id="container">
-            <div id="containerautor">
-                <h1>Cartas</h1>
-                <p>As cartas são uma forma de comunicação escrita que tem sido utilizada ao longo da história para transmitir mensagens pessoais, sentimentos e pensamentos. Elas podem variar em estilo, tom e conteúdo, dependendo do propósito e do destinatário. As cartas podem ser formais ou informais, e muitas vezes refletem a personalidade e o estado emocional do remetente.</p>
-                <p>Além de serem uma forma de comunicação, as cartas também podem servir como registros históricos, preservando momentos importantes da vida de uma pessoa ou eventos significativos. Muitas vezes, as cartas são guardadas como lembranças preciosas, carregando consigo memórias e emoções que perduram ao longo do tempo.</p>
+    <main><article>
+        
+            <div id="container">
+                <div id="containerautor">
+                    <h1>Cartas</h1>
+                    <p>As cartas são uma forma de comunicação escrita que tem sido utilizada ao longo da história para transmitir mensagens pessoais, sentimentos e pensamentos. Elas podem variar em estilo, tom e conteúdo, dependendo do propósito e do destinatário. As cartas podem ser formais ou informais, e muitas vezes refletem a personalidade e o estado emocional do remetente.</p>
+                    <p>Além de serem uma forma de comunicação, as cartas também podem servir como registros históricos, preservando momentos importantes da vida de uma pessoa ou eventos significativos. Muitas vezes, as cartas são guardadas como lembranças preciosas, carregando consigo memórias e emoções que perduram ao longo do tempo.</p>
+                    <h2 style="color: #9B1B30; text-decoration: none;"><a href="genealogia.html" target="_blank"   >&rightarrow; Genealogia &LeftArrow;</a></h2>
+                </div>
             </div>
-        </div>
+            <div class="caixadehistoria">
+        
+                    <div class="tabela_capitulos" role="chapters" tabindex="0">
+                        <table>
+                            <caption>Reflexões</caption>
+                            <thead>
+                                <tr>
+                                    <th>Capítulos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">1.1 Reflexão sobre a Páscoa (2025)</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">1.2</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div><a href="#">1.3</a></div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">1.4</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">1.5</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+        
+                    <div class="tabela_capitulos" role="chapters" tabindex="0">
+                        <table>
+                            <caption>Apologética</caption>
+                            <thead>
+                                <tr>
+                                    <th>Capítulos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">2.1 O Mito da Interpolação da Perícope da Mulher Adúltera</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">2.2</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div><a href="#">2.3</a></div> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">2.4</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">2.5</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+    </article>
+
     </main>
 
     <div id="espacoentre"></div>
 
-    <footer>
+            <script src="script.js"></script>
 
-        <div id="footergeral">
-
-            <div id="footerconteudo">
-                <div id="footerdireitos">
-                    <p> &copy; 2025 Rasyon Heneyah. Todos os direitos reservados.</p>
-                    
-                </div>
-
-                <div id="footerico">
-                    
-                    <a href="https://github.com/Rasyonheneyah" target="_blank" rel="external">
-                        <span id="icoautor"></span>
-                    </a>
-                    <p>Desenvolvido por Rasyon</p>
-                </div>
-
-            </div>
-        </div>     
-
-    </footer>
 
 </body>
 </html>

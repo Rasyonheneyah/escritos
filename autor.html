@@ -17,15 +17,26 @@
     <link rel="canonical" href="https://rasyonheneyah.github.io/escritos/"> <!-- URL canônica da página -->
     <!-- Padrão 2-->
     <title>Autor - Rasyon Heneyah</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="padrao.css">
     <link rel="icon" href="logo1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
 </head>
 <body>
     <header>
         <div id="headergeral">
-            <nav>
-                <a id="hamburguer" class="headeraltura" href="#">☰</a>          
-            </nav>
+            <div class="menu">
+                <button id="hamburguer" class="headeraltura" onclick="toggleMenu()">☰</button>
+                <nav class="nav-principal">
+                    <ul class="">
+                        <li><a class="botao-nav" href="index.html"><span class="material-symbols-outlined">home</span>Início</a></li>
+                        <li><a class="botao-nav" href="historias.html"><span class="material-symbols-outlined">auto_stories</span>Histórias</a></li>
+                        <li><a class="botao-nav" href="poemas.html"><span class="material-symbols-outlined">ink_pen</span>Poemas</a></li>
+                        <li><a class="botao-nav" href="cartas.html"><span class="material-symbols-outlined">history_edu</span>Cartas</a></li>
+                        <li><a class="botao-nav" href="autor.html"><span class="material-symbols-outlined">person</span>Autor</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="headerlogotitulo">
                 
                 <span class="logosite"></span>
@@ -33,24 +44,26 @@
             </div>
         </div>
     </header>
-    <div id="espacoentre"></div>
-    <main>
-        <div id="container">
-            <div id="containerautor">
-                <h1>Sobre o Autor</h1>
-                <p>Rasyon Heneyah é um escritor e poeta brasileiro, conhecido por suas obras que exploram temas como espiritualidade, filosofia e a busca pela verdade. Com uma abordagem única e reflexiva, Rasyon convida os leitores a mergulharem em suas histórias e poemas, que muitas vezes são inspirados por sua própria jornada de autodescoberta e fé.</p>
-                <p>Além de escrever, Rasyon também é um defensor da educação e do conhecimento, acreditando que a leitura e a reflexão são fundamentais para o crescimento pessoal e espiritual. Suas obras são uma combinação de criatividade, sabedoria e uma profunda conexão com a espiritualidade.</p>
-                <p>Rasyon Heneyah continua a escrever e compartilhar suas reflexões com o mundo, inspirando outros a buscarem suas próprias verdades e a se conectarem com sua essência.</p>
-            </div>
-        </div>
-        <div id="containerredes">
-            <h1>Redes Sociais</h1>
-            <div id="redes">
-                <a href="https://www.instagram.com/rasyonheneyah/" target="_blank">Instagram</a>
-                <a href="https://www.facebook.com/rasyonheneyah" target="_blank">Facebook</a>
-                <a href="https://www.linkedin.com/in/rasyon-heneyah-4b8b0b1b2/" target="_blank">LinkedIn</a>
-                
 
+    <div id="espacoentre"></div>
+    
+    <main><article>
+        
+            <div id="container">
+                <div id="containerautor">
+                    <h1>Sobre o Autor</h1>
+                    <p>Rasyon Heneyah é um escritor e poeta brasileiro, conhecido por suas obras que exploram temas como espiritualidade, filosofia e a busca pela verdade. Com uma abordagem única e reflexiva, Rasyon convida os leitores a mergulharem em suas histórias e poemas, que muitas vezes são inspirados por sua própria jornada de autodescoberta e fé.</p>
+                    <p>Além de escrever, Rasyon também é um defensor da educação e do conhecimento, acreditando que a leitura e a reflexão são fundamentais para o crescimento pessoal e espiritual. Suas obras são uma combinação de criatividade, sabedoria e uma profunda conexão com a espiritualidade.</p>
+                    <p>Rasyon Heneyah continua a escrever e compartilhar suas reflexões com o mundo, inspirando outros a buscarem suas próprias verdades e a se conectarem com sua essência.</p>
+                </div>
+            </div>
+            <div id="containerredes">
+                <h1>Redes Sociais</h1>
+                <div id="redes">
+                    <a href="https://github.com/Rasyonheneyah" target="_blank">Github</a>
+        
+                </div>
+    </article>
 
 </main>
 
@@ -68,8 +81,7 @@
 
                 <div id="footerico">
                     
-                    <a href="https://github.com/Rasyonheneyah" target="_blank" rel="external">
-                        <span id="icoautor"></span>
+                    <a href="https://github.com/Rasyonheneyah" target="_blank" rel="external"><span id="icoautor"></span>
                     </a>
                     <p>Desenvolvido por Rasyon</p>
                 </div>
@@ -78,6 +90,8 @@
         </div>     
 
     </footer>
+
+        <script src="script.js"></script>
 
 </body>
 </html>

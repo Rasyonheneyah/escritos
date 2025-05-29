@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Genealogia Bíblica até Jesus</title>
+<style>
+  body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+
+  .tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .generation {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 0;
+    position: relative;
+  }
+
+  .node {
+    background: #333;
+    border: 2px solid #777;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+  }
+
+  /* Linhas para pais e mães */
+  .generation::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #777;
+    z-index: -1;
+  }
+
+  .line-down {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    background-color: #777;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  /* Caixa de informações */
+  .info-box {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    padding: 20px;
+    border: 2px solid #777;
+    border-radius: 10px;
+    display: none;
+    z-index: 20;
+  }
+
+  .close-btn {
+    background: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    float: right;
+  }
+
+  /* Conector entre pais e filho */
+  .connector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .connector .line-vertical {
+    width: 2px;
+    height: 40px;
+    background-color: #00aaff;
+    position: absolute;
+    top: 0;
+  }
+
+  .connector .line-vertical.mother {
+    background-color: #ff69b4;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Genealogia Bíblica até Jesus</h1>
+
+<div class="tree">
+
+  <!-- Adão e Eva -->
+  <div class="generation">
+    <div class="node" onclick="showInfo('Adão')">Adão</div>
+    <div class="node" onclick="showInfo('Eva')">Eva</div>
+  </div>
+  <div class="connector">
+    <div class="line-vertical father"></div>
+    <div class="line-vertical mother"></div>
+  </div>
+
+  <!-- Sete -->
+  <div class="node" onclick="showInfo('Sete')">Sete</div>
+
+  <!-- Linha para Enos -->
+  <div class="line-down"></div>
+
+  <!-- Enos -->
+  <div class="node" onclick="showInfo('Enos')">Enos</div>
+
+  <!-- Linha para Noé -->
+  <div class="line-down"></div>
+
+  <!-- Noé -->
+  <div class="node" onclick="showInfo('Noé')">Noé</div>
+
+  <!-- Abraão e Sara -->
+  <div class="generation">
+    <div class="node" onclick="showInfo('Abraão')">Abraão</div>
+    <div class="node" onclick="showInfo('Sara')">Sara</div>
+  </div>
+  <div class="connector">
+    <div class="line-vertical father"></div>
+    <div class="line-vertical mother"></div>
+  </div>
+
+  <!-- Isaque -->
+  <div class="node" onclick="showInfo('Isaque')">Isaque</div>
+
+  <!-- Jacó e Raquel -->
+  <div class="generation">
+    <div class="node" onclick="showInfo('Jacó')">Jacó</div>
+    <div class="node" onclick="showInfo('Raquel')">Raquel</div>
+  </div>
+  <div class="connector">
+    <div class="line-vertical father"></div>
+    <div class="line-vertical mother"></div>
+  </div>
+
+  <!-- Judá -->
+  <div class="node" onclick="showInfo('Judá')">Judá</div>
+
+  <!-- Davi -->
+  <div class="line-down"></div>
+  <div class="node" onclick="showInfo('Davi')">Rei Davi</div>
+
+  <!-- José e Maria -->
+  <div class="generation">
+    <div class="node" onclick="showInfo('José')">José</div>
+    <div class="node" onclick="showInfo('Maria')">Maria</div>
+  </div>
+  <div class="connector">
+    <div class="line-vertical father"></div>
+    <div class="line-vertical mother"></div>
+  </div>
+
+  <!-- Jesus -->
+  <div class="node" onclick="showInfo('Jesus')">Jesus</div>
+
+</div>
+
+<!-- Caixa de informações -->
+<div class="info-box" id="infoBox">
+  <button class="close-btn" onclick="closeInfo()">X</button>
+  <div id="infoContent"></div>
+</div>
+
+<script>
+function showInfo(name) {
+  const info = {
+    'Adão': 'Adão - Primeiro homem criado por Deus.',
+    'Eva': 'Eva - Primeira mulher criada por Deus.',
+    'Sete': 'Sete - Filho de Adão e Eva.',
+    'Enos': 'Enos - Filho de Sete.',
+    'Noé': 'Noé - Justo, salvou-se do dilúvio.',
+    'Abraão': 'Abraão - Pai da fé, fez aliança com Deus.',
+    'Sara': 'Sara - Esposa de Abraão, mãe de Isaque.',
+    'Isaque': 'Isaque - Filho da promessa de Abraão e Sara.',
+    'Jacó': 'Jacó - Filho de Isaque, teve 12 filhos que formaram as tribos de Israel.',
+    'Raquel': 'Raquel - Esposa amada de Jacó, mãe de José e Benjamim.',
+    'Judá': 'Judá - Um dos filhos de Jacó, de quem descende Davi.',
+    'Davi': 'Rei Davi - Rei de Israel, da sua descendência vem o Messias.',
+    'José': 'José - Marido de Maria, descendente de Davi.',
+    'Maria': 'Maria - Mãe de Jesus, escolhida por Deus.',
+    'Jesus': 'Jesus - Filho de Deus, Salvador da humanidade.'
+  };
+  document.getElementById('infoContent').innerText = info[name] || 'Sem informações.';
+  document.getElementById('infoBox').style.display = 'block';
+}
+
+function closeInfo() {
+  document.getElementById('infoBox').style.display = 'none';
+}
+
+// Fecha o popup ao clicar fora
+document.addEventListener('click', function(event) {
+  const infoBox = document.getElementById('infoBox');
+  if (infoBox.style.display === 'block' && !infoBox.contains(event.target) && !event.target.classList.contains('node')) {
+    closeInfo();
+  }
+});
+</script>
+
+</body>
+</html>

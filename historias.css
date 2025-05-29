@@ -1,2 +1,144 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Medieval Sharp';
+    src: url(./fontes/MedievalSharp-Regular.ttf);
+}
+@font-face {
+    font-family: 'Titulos';
+    src: url(fontes/Cinzel-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Cursiva' ;
+    src: url(fontes/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: 'Texto';
+    src: url(fontes/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Dialogo';
+    src: url(fontes/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+
+
+body {
+    background-color: #F5DEB3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+
+main{
+    font-family: "Texto";
+    background-color: #ffffff;
+    width: 60%;
+    margin: auto;
+    padding: 2.5% 7.5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #0000006c;
+}
+.hr{
+    width: 70%;
+}
+#titulohistoria{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Medieval Sharp';
+    font-size: 301%;
+    color: #5D4A66;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    text-shadow: 1px 1px 3px #000000;
+
+
+}
+h2{
+    font-family: 'Titulos';
+    font-size: 40px;
+    color: #3C4E59;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0 30px;
+    text-shadow: 1px 1px 3px #000000b7;
+}
+
+p{
+  margin-bottom: 1.2em; /* Espaço entre parágrafos */
+  line-height: 1.6;     /* Espaçamento entre linhas d   */
+}
+.cenafim{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 30px 0;
+    font-size: 24px;
+    opacity: 0.65;
+}
+
+
+
+
+.capa{
+    width: 75%;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 25px ;
+    border: 2.0px solid #000;
+    display: block;
+    margin: 25px 12.5% 0 12.5%;
+    box-shadow: 1px 1px 3px #0000006c;
+
+}
+.capa:hover{
+    transform: scale(1.01); /*Aumenta a imagem*/
+    transition: all 0.5s ease-in-out; /*Transição suave*/
+    cursor: pointer; /*Muda o cursor para a mãozinha*/
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.painel{
+    margin-top: 20px;
+    height: 50px;
+    display: block;
+}
+.painelmenor{
+    display: flex;
+    height: 80% ;
+    width: fit-content;
+    margin: auto;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.botao{
+    width: 30px;
+    vertical-align: middle;
+    border: 1.5px solid #0000007c;
+    padding: 7.5px 1px 1px 7.5px;
+    border-radius: 10px;
+    background-color:#4c5b5c52;
+    align-items: center;
+    margin: auto;
+    color: black;
+}
+.botaooculto{
+    z-index: -1;
+}
+.botao:hover{
+    background-color: #4c5b5c94 ;
+    color: #EAE3D2;
+}
 

@@ -32,114 +32,19 @@ Marrom titulo #b17c2e
 
 body{
     background-color:#F5DEB3 ;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%; /*Ocupar toda tela*/
-    margin: 0;
 }
 
-/*Cobrir toda a Tela*/
-header, footer{
-    left: 0;
-    right: 0;
-    width: 100%;
-    
-}
 
-header{
-    background-color: #767B46;
-    top: 0;
-    position: fixed; /*Vai junto quando for para baixo*/
-    height: 65px; /*Tamanho que parece razoável*/
-    margin:0; 
-    box-shadow: 1px 1px 3px #0000006c;
-    z-index: 1; /*Fica em cima de tudo*/
-}
-
-#tituloheader{
-    font-family: 'Medieval Sharp';
-    font-size: 50px ;
-    color: #b17c2e;
-    text-shadow: 1px 1px 1px #4b3621d5;
-    margin: 0;
-    width: 100%;
-    height: 50px;
-    margin: 7.5px 10px; /*Para a height chegar em 65 igual do header e alinhar no meio*/
-
-}
-
-nav{
-    margin: 0;
-    width: 45px;
-
-}
-
-.headeraltura{
-    height: 65px; /*Tamanho que parece razoável*/
-}
-
-/* ☰ = hamburguer */
-#hamburguer{
-    font-size: 45px;
-    color: #b17c2e;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0px 10px; /*espaço para nao ficar coladona esquerda*/
-    background-color: #6c7240a2;
-    border-radius: 1%;
-}
-#hamburguer:visited{
-    text-decoration: none;
-}
-
-#hamburguer:active{
-    text-decoration: none;
-    color: #b17c2e;
-}
-
-#hamburguer:hover{
-    color: #9e6f29
-}
-
-#headergeral{
-    height: 65px; /*Tamanho que parece razoável*/
-    display: flex; /*Ficarem em linha reta*/
-
-}
-
-#headerlogotitulo{
-    width: 100%; /*Tam do logo + titulo (um pouco mais)*/
-    padding: 0 0 0 20px;
-    display: flex ; /*Já vai ficando na mesma linha*/
-    align-items: center; /*Alinha no meio*/
-}
-
-.logosite{
-    background-image: url(./logo2.png);
-    background-position: center; /*Centraliza imagem*/
-    background-size: cover; /*Cobrir todo o espaço*/
-    height: 50px;
-    width: 58px; /*Proporção com regra de três*/
-    display: flex; /*Faz virar flexível*/
-    background-repeat: no-repeat; /*Não repete a imagem no fundo*/
-    margin: 7.5px 0; /*Para a height chegar em 65 igual do header e alinhar no meio*/
-    flex-shrink: 0; /*NÃO DEIXA ENCOLHER O ABENÇOADO!
-    controla a capacidade de encolher do elemento flexível quando o espaço disponível é menor que o tamanho do conteúdo.
-    Se o valor for 0, o elemento não encolhe. Se for 1, ele encolhe proporcionalmente ao tamanho do conteúdo. */
-
-}
-#espacoentre{
-    height: 90px;
-}
 
 main {
     background-color:#EAE3D2 ;
     margin: 5em 0 0 0;
-    width: 85%;
+    width: 67.5%;
     margin: auto;
     height: max-content;
     box-shadow: 1px 1px 3px #0000006c;
-    border-radius: 7% 7% 7% 7%;
-    padding: 1.5em;
+    border-radius: 25px;
+    padding: 2.75%;
 }
  
 h1{
@@ -158,6 +63,7 @@ h2{
     font-family: 'Medieval Sharp'; ;
     text-shadow: 1px 2px 3px #0000009c;
 }
+
 h2:hover{
     color: #5D4A66;
     cursor: pointer; /*Muda o cursor para a mãozinha*/
@@ -170,20 +76,9 @@ h3{
     color: #4C5B5C;
 }
 
-.historia{
-    color: #3C4E59;
-}
-.poema{
-    color: #767B46;
-}
-.carta{
-    color: #A0522D;
-}
-
 main p{ /*o espaço é para aplicar nos P que tão no MAIN*/
-    text-align: justify;
     font-size: 18px;
-    text-indent: 3em;
+    text-indent: 10%;
 }
 
 p>a{
@@ -206,72 +101,6 @@ p>a{
     cursor: pointer; /*Muda o cursor para a mãozinha*/
 }
 
-footer{
-    background-color: #5D4A66;
-    bottom:0;
-    height: 150px;
-    width: 100%;
-    margin: 2.5em 0em 0em 0em;
-    box-shadow: -1px -1px 3px #0000006c;
-}
-
-#footergeral{
-    height: 150px;
-    width: 100%;
-    display: block; /*box*/
-    /*align-items: center; Alinha no meio verticalmente 
-    justify-content: center; Alinha no meio*/ 
-}
-
-footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
-    font-size: 18px;
-    color: #DAA520;
-    margin: 0;
-    text-indent: 2px;
-}
-
-#footerconteudo{
-    display: flex; /*Faz virar flexível*/
-    flex-direction: column; /*Faz ficar em coluna*/
-    gap: 15px; /*Espaçamento entre os elementos*/
-    width: 96.5%;
-    height: 130px;
-    padding-left: 15px;
-    padding-top: 15px;
-
-}
-
-#footerdireitos{
-    width: 100%;
-    height: auto; /*TAMANHO AUTOMATICO DE ACORDO COM O TEXTO ;]*/
-}
-#footerico{
-    width: 100%;
-    height: 50px;
-    display: flex; /*Faz virar flexível*/
-    flex-direction: row; /*Faz ficar em linha*/
-    align-items: center; /*Alinha no meio vertical*/
-    justify-content: center; /*Alinha no meio horizontal*/
-    gap: 5px; /*Espaçamento entre os elementos*/    
-}
-
-#icoautor{
-    background-image: url(./autor.png);
-    background-repeat: no-repeat; /*Não repete a imagem no fundo*/
-    background-size: cover;
-    display: flex; /*Faz virar flexível*/
-    height: 35px;
-    width: 35px; 
-    border-radius: 50%;
-    
-}
-/*Não poder copiar o texto*/
-.no-copy {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
 
 
 /*

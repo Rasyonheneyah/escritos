@@ -20,16 +20,27 @@
     <!-- Padrão 2-->
 
     <title>Histórias | Escritos de Rasyon</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="padrao.css">
     <link rel="stylesheet" href="menuhistorias.css">
     <link rel="icon" href="logo1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
 </head>
 <body>
     <header>
         <div id="headergeral">
-            <nav>
-                <a id="hamburguer" class="headeraltura" href="#">☰</a>          
-            </nav>
+            <div class="menu">
+                <button id="hamburguer" class="headeraltura" onclick="toggleMenu()">☰</button>
+                <nav class="nav-principal">
+                    <ul class="">
+                        <li><a class="botao-nav" href="index.html"><span class="material-symbols-outlined">home</span>Início</a></li>
+                        <li><a class="botao-nav" href="historias.html"><span class="material-symbols-outlined">auto_stories</span>Histórias</a></li>
+                        <li><a class="botao-nav" href="poemas.html"><span class="material-symbols-outlined">ink_pen</span>Poemas</a></li>
+                        <li><a class="botao-nav" href="cartas.html"><span class="material-symbols-outlined">history_edu</span>Cartas</a></li>
+                        <li><a class="botao-nav" href="autor.html"><span class="material-symbols-outlined">person</span>Autor</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="headerlogotitulo">
                 
                 <span class="logosite"></span>
@@ -42,100 +53,98 @@
 <main>
     <div id="container">
         <div id="containerautor">
-            <h1>Histórias</h1>
-            <p>
-                    As histórias naturalmente possuem três divisões principais: <strong>história</strong>, <strong>arcos</strong> e <strong>capítulos</strong>. A história é a obra completa, o arco é uma parte da história que possui um tema ou objetivo específico, e o capítulo é uma subdivisão do arco. Evidentemente algumas histórias podem ser exceções, assim como pode haver histórias paralelas ou fragmentos a cerca de personagens ou eventos.
+            <article>
+                <h1>Histórias</h1>
+                <p>
+                        As histórias naturalmente possuem três divisões principais: <strong>história</strong>, <strong>arcos</strong> e <strong>capítulos</strong>. A história é a obra completa, o arco é uma parte da história que possui um tema ou objetivo específico, e o capítulo é uma subdivisão do arco. Evidentemente algumas histórias podem ser exceções, assim como pode haver histórias paralelas ou fragmentos a cerca de personagens ou eventos.
                 
-            </p>
-            <p>
-                    Aqui você encontrará as minhas histórias, desejo-lhe uma ótima leitura!
-    
-            </p>
-            <ul class="listhistoria">
-                <li>
-                    <h2 class="historia">O Mundo precisa de Razão</h2>
-                </li>
-                <p>O mundo precisa de razão, ao menos é o que Rasyon acredita. Por isso criou sua organização, denominada de <i>Caminho da Razão</i>, a qual batalha contra as maldades do mundo, de forma antiética e muitas vezes invisível. Porém, cada vez mais tem tornado a parte invisível em visível, sobretudo a caça dos perversos. Após uma dessas missões, Próguito, um advogado amargurado é convidado para ela, em uma sucessão de eventos desgastantes à ele, como perseguição, o jovem acaba cedendo a tentação, contudo, ele coloca uma condição, na realidade duas condições, para se juntar ao Rasyon.    </p>
-            <div class="caixadehistoria">
-                    
-                <div class="tabela_capitulos" role="chapters" tabindex="0">
-                    <table>
-                        <caption>Arco 01: O Despertar da Razão</caption>
-                        <thead>
-                            <tr>
-                                <th>Capítulos</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div><a href="ocr-capitulo1.html">1.1 O Perigoso Convite do Mascarado</a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div><a href="#">1.2 Uma Ameaça Ainda Maior</a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><div><a href="">1.3</a></div> </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div><a href="">1.4</a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div><a href="">1.5</a></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="tabela_capitulos" role="chapters" tabindex="0">
-                    <table>
-                        <caption>Arco 02: </caption>
-                        <thead>
-                            <tr>
-                                <th>Capítulos</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div><a href="ocr-capitulo1.html">2.1</a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                        <div><a href="#">2.2</a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><div><a href="">2.3</a></div> </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div><a href="">2.4</a></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div><a href="">2.5</a></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </p>
+                <p>
+                        Aqui você encontrará as minhas histórias, desejo-lhe uma ótima leitura!
+                </p>
+                <ul class="listhistoria">
+                    <li>
+                        <h2 class="historia">O Mundo precisa de Razão</h2>
+                    </li>
+                    <p>O mundo precisa de razão, ao menos é o que Rasyon acredita. Por isso criou sua organização, denominada de <i>Caminho da Razão</i>, a qual batalha contra as maldades do mundo, de forma antiética e muitas vezes invisível. Porém, cada vez mais tem tornado a parte invisível em visível, sobretudo a caça dos perversos. Após uma dessas missões, Próguito, um advogado amargurado é convidado para ela, em uma sucessão de eventos desgastantes à ele, como perseguição, o jovem acaba cedendo a tentação, contudo, ele coloca uma condição, na realidade duas condições, para se juntar ao Rasyon.    </p>
+                <div class="caixadehistoria">
+                
+                    <div class="tabela_capitulos" role="chapters" tabindex="0">
+                        <table>
+                            <caption>Arco 01: O Despertar da Razão</caption>
+                            <thead>
+                                <tr>
+                                    <th>Capítulos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div><a href="ocr-01-c01.html">1.1 O Perigoso Convite do Mascarado</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="ocr-01-c02.html">1.2 Uma Ameaça Ainda Maior</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div><a href="">1.3</a></div> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="">1.4</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="">1.5</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-
-
-            </ul>
-            
-        </div>
-    </div>
+                    <div class="tabela_capitulos" role="chapters" tabindex="0">
+                        <table>
+                            <caption>Arco 02: </caption>
+                            <thead>
+                                <tr>
+                                    <th>Capítulos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div><a href="#">2.1</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            <div><a href="#">2.2</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div><a href="">2.3</a></div> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="">2.4</a></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><a href="">2.5</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </ul>
+                
+                        </div>
+                    </div>
+    </article>
 </main>
 
     <div id="espacoentre"></div>
@@ -152,16 +161,15 @@
 
                 <div id="footerico">
                     
-                    <a href="https://github.com/Rasyonheneyah" target="_blank" rel="external">
-                        <span id="icoautor"></span>
-                    </a>
-                    <p>Desenvolvido por Rasyon</p>
+                    <a href="https://github.com/Rasyonheneyah" target="_blank" rel="external"><span id="icoautor"></span></a><p>Desenvolvido por Rasyon</p>
                 </div>
 
             </div>
         </div>     
 
     </footer>
+
+        <script src="script.js"></script>
 
 </body>
 </html>

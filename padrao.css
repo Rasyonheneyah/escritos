@@ -297,7 +297,7 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
   -moz-user-select: none;
   -ms-user-select: none;
 }
-
+/*
 @media only screen and (max-width:768px){
 
     header, .headeraltura, .headergeral{

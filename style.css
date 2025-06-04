@@ -34,12 +34,9 @@ body{
     background-color:#F5DEB3 ;
     width: 100%;
 }
-
-
-
+ 
 main {
     background-color:#EAE3D2 ;
-    margin: 20% 0 0 0;
     width: 90%;
     margin: auto;
     height: max-content;
@@ -47,7 +44,8 @@ main {
     border-radius: 25px;
     padding: 2.75%;
 }
- 
+
+
 h1{
     color: #5D4A66;
     text-align: center;

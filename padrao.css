@@ -49,24 +49,12 @@ header{
     background-color: #767B46;
     top: 0;
     position: fixed; /*Vai junto quando for para baixo*/
-    height: 65px; /*Tamanho que parece razoável*/
+    height: 60px; /*Tamanho que parece razoável*/
     margin:0; 
     box-shadow: 1px 1px 3px #0000006c;
     z-index: 10; /*Fica em cima de tudo*/
 }
 
-#tituloheader{
-    font-family: 'Medieval Sharp';
-    font-size: 50px ;
-    color: #b17c2e;
-    text-shadow: 1px 1px 1px #4b3621d5;
-    margin: 0;
-    width: 100%;
-    height: 50px;
-    margin: 7.5px 10px; /*Para a height chegar em 65 igual do header e alinhar no meio*/
-    max-width: fit-content;
-
-}
 
 nav{
     margin: 0;
@@ -96,7 +84,7 @@ nav > ul > li{
 }
 
 .headeraltura{
-    height: 65px; /*Tamanho que parece razoável*/
+    height: 60px; /*Tamanho que parece razoável*/
 }
 
 /* --- Botões gerais --- */
@@ -122,7 +110,7 @@ nav > ul > li{
 
 /* ☰ = hamburguer */
 #hamburguer{
-    font-size: 45px;
+    font-size: 200%;
     color: #b17c2e;
     padding: 0px 10px; /*espaço para nao ficar coladona esquerda*/
     background-color: #6c7240a2;
@@ -143,7 +131,7 @@ nav > ul > li{
 }
 
 #headergeral{
-    height: 65px; /*Tamanho que parece razoável*/
+    height: 60px; /*Tamanho que parece razoável*/
     display: flex; /*Ficarem em linha reta*/
 
 }
@@ -173,20 +161,32 @@ nav > ul > li{
 
 #headerlogotitulo{
     width: 100%; /*Tam do logo + titulo (um pouco mais)*/
-    padding: 0 0 0 20px;
+    padding: 0 0 0 1.5%;
     display: flex ; /*Já vai ficando na mesma linha*/
     align-items: center; /*Alinha no meio*/
 }
+
+#tituloheader{
+    font-family: 'Medieval Sharp';
+    font-size: 175% ;
+    color: #b17c2e;
+    text-shadow: 1px 1px 1px #4b3621d5;
+    width: 100%;
+    margin: 0px 2%; /*Para a height chegar em 65 igual do header e alinhar no meio*/
+    padding: 0;
+    max-width: fit-content;
+}
+
 
 .logosite{
     background-image: url(./logo2.png);
     background-position: center; /*Centraliza imagem*/
     background-size: cover; /*Cobrir todo o espaço*/
-    height: 50px;
-    width: 58px; /*Proporção com regra de três*/
+    height: 35px;
+    width: 42px; /*Proporção com regra de três*/
     display: flex; /*Faz virar flexível*/
     background-repeat: no-repeat; /*Não repete a imagem no fundo*/
-    margin: 7.5px 0; /*Para a height chegar em 65 igual do header e alinhar no meio*/
+    margin: 5.0px 0; /*Para a height chegar em 65 igual do header e alinhar no meio*/
     flex-shrink: 0; /*NÃO DEIXA ENCOLHER O ABENÇOADO!
     controla a capacidade de encolher do elemento flexível quando o espaço disponível é menor que o tamanho do conteúdo.
     Se o valor for 0, o elemento não encolhe. Se for 1, ele encolhe proporcionalmente ao tamanho do conteúdo. */
@@ -206,6 +206,7 @@ nav > ul > li{
 #espacoentre{
     height: 90px;
 }
+
 
 /*CORES DE Hs*/
 .historia{

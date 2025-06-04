@@ -5,37 +5,37 @@ body{
     background-color:#F5DEB3 ;
 }
 
-main{
+main {
     background-color:#EAE3D2 ;
-    margin: 5em 0 0 0;
-    width: 67.5%;
+    width: 90%;
     margin: auto;
     height: max-content;
     box-shadow: 1px 1px 3px #0000006c;
-    border-radius: 1%;
-    padding: 1.5em;
+    border-radius: 25px;
+    padding: 2.75%;
 }
+
 
 h1{
     color: #5D4A66;
     text-align: center;
-    font-size: 60px;
+    font-size: 325%;
     margin: 5px;
     font-family: 'Medieval Sharp'; ;
     font-weight: bolder;
     text-shadow: 1px 1px 3px #5D4A6694;
 }
 h2{
-    font-size: 40px;
+    font-size: 250%;
     font-family: 'Medieval Sharp'; ;
     text-shadow: 1px 2px 3px #0000009c;
-        color: #3C4E59;
-    text-align: left;
-    text-indent: 20px ;
+    color: #3C4E59;
+    text-align: center;
 }
+
 h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 200%;
     font-family: 'Medieval Sharp'; ;
     color: #4C5B5C;
 }
@@ -51,9 +51,6 @@ main p{
 }
 
 
-
-
-
 a{
     text-decoration: none;
 }
@@ -64,15 +61,16 @@ ul{
 
 .caixadehistoria{
     height: fit-content; /* Ajusta a altura do elemento para caber o conteúdo */
-    gap: 5.5%;
+    gap: 5.0%;
     display: flex;
     flex-direction: vertical;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
+    width: 100%;
 }
 /*tabela de arcos e capítulos*/
 caption{
-    font-size: 20px;
+    font-size: 150%;
     font-weight: bold;
     color: #3C4E59;
     text-align: left;
@@ -81,21 +79,21 @@ caption{
 
 table {
     box-shadow: 1px 1px 2px #00000052;
+    margin-bottom: 20px;
 }
 
 .tabela_capitulos {
     overflow: visible;
-    width: 45%;
+    width: 95%;
     height: fit-content;
 }
 
 .tabela_capitulos table {
-    border: 1px solid #b17c2e;
+    border: 2.0px solid #b17c2e;
     height: 100%;
     width: 100%;
     table-layout: auto;
     border-collapse: collapse;
-    border-spacing: 2px;
     text-align: center;
 }
 

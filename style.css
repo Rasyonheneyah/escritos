@@ -32,14 +32,15 @@ Marrom titulo #b17c2e
 
 body{
     background-color:#F5DEB3 ;
+    width: 100%;
 }
 
 
 
 main {
     background-color:#EAE3D2 ;
-    margin: 5em 0 0 0;
-    width: 67.5%;
+    margin: 20% 0 0 0;
+    width: 90%;
     margin: auto;
     height: max-content;
     box-shadow: 1px 1px 3px #0000006c;
@@ -50,7 +51,7 @@ main {
 h1{
     color: #5D4A66;
     text-align: center;
-    font-size: 60px;
+    font-size: 350%;
     margin: 5px;
     font-family: 'Medieval Sharp'; ;
     font-weight: bolder;
@@ -59,7 +60,7 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 325%;
     font-family: 'Medieval Sharp'; ;
     text-shadow: 1px 2px 3px #0000009c;
 }
@@ -71,7 +72,7 @@ h2:hover{
 
 h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 300%;
     font-family: 'Medieval Sharp'; ;
     color: #4C5B5C;
 }

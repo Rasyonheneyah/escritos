@@ -29,7 +29,9 @@ body {
     box-shadow: 1px 1px 3px #0000006c;
 
 }
-
+header{
+    position: absolute;
+}
 
 main{
     font-family: "Texto";
@@ -71,6 +73,7 @@ h2{
 }
 
 p{
+  font-size: 20px;
   margin-bottom: 1.2em; /* Espaço entre parágrafos */
   line-height: 1.6;     /* Espaçamento entre linhas d   */
   text-align: justify;
@@ -142,3 +145,10 @@ p{
     color: #EAE3D2;
 }
 
+@media only screen and (min-width:1024px){
+    main{
+        margin:auto;
+        width: 50%;
+    }
+
+}

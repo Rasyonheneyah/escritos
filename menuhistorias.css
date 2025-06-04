@@ -126,3 +126,9 @@ td>div>a:hover{
     text-decoration: none;
     color:#9B4842 ;
 }
+
+@media screen and (min-width: 1024px){
+    .tabela_capitulos{
+        width: 40%;
+    }
+}

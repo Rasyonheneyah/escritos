@@ -32,9 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const conteudo = document.getElementById("conteudo-cru");
   if (conteudo) {
     const textoCru = conteudo.textContent.trim();
+    
+    // Divide o texto por linhas (quebra de linha simples ou dupla)
     const paragrafos = textoCru.split(/\r?\n/);
+
+    // Monta o HTML com <p> e aplica o estilo especial para [...]
     conteudo.innerHTML = paragrafos
-      .map(linha => `<p>${linha.trim()}</p>`)
+      .map(linha => {
+        const texto = linha.trim();
+        if (texto === '[...]') {
+          return `<p class="cenafim">[...]</p>`;
+        }
+        return `<p>${texto}</p>`;
+      })
       .join('');
   }
 });

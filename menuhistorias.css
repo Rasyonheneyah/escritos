@@ -26,11 +26,13 @@ h1{
     text-shadow: 1px 1px 3px #5D4A6694;
 }
 h2{
-    font-size: 250%;
+    font-size: 130%;
     font-family: 'Medieval Sharp'; ;
     text-shadow: 1px 2px 3px #0000009c;
     color: #3C4E59;
     text-align: center;
+    padding: 0;
+    margin: 0 0 2%;
 }
 
 h3{
@@ -49,17 +51,27 @@ main p{
 .listhistoria{
     list-style-type: none;
 }
-
+.caixadehistorias{
+    width: 100%;
+    margin: auto;
+    
+}
 
 a{
     text-decoration: none;
 }
+
 ul{
     padding: 0;
 }
 
+.hr80{
+    width: 90%;
+    margin: 25px 5%;
+}
 
-.caixadehistoria{
+
+.caixadecapitulos{
     height: fit-content; /* Ajusta a altura do elemento para caber o conteúdo */
     gap: 5.0%;
     display: flex;
@@ -127,8 +139,27 @@ td>div>a:hover{
     color:#9B4842 ;
 }
 
+.imagem{
+    border-radius: 1%;
+    border: 1.0px solid #DAA520 ;
+    box-shadow: 1px 1px 15px #daa5209a;
+    margin: 0 auto; /*Para centralizar*/
+    display: block; /*Para centralizar*/
+
+}
+.imagem:hover{
+    box-shadow: 1px 1px 15px #DAA520;
+    transform: scale(1.025); /*Aumenta a imagem*/
+    transition: all 0.5s ease-in-out; /*Transição suave*/
+    cursor: pointer; /*Muda o cursor para a mãozinha*/
+}
+
 @media screen and (min-width: 1024px){
     .tabela_capitulos{
         width: 40%;
+    }
+
+    main{
+        width: 70%;
     }
 }

@@ -25,3 +25,16 @@ document.addEventListener('click', function(event) {
 botaoHamburguer.addEventListener('click', function(event) {
     event.stopPropagation();
 });
+
+
+// Colocar tag p automaticamente nas histórias
+document.addEventListener('DOMContentLoaded', () => {
+  const conteudo = document.getElementById("conteudo-cru");
+  if (conteudo) {
+    const textoCru = conteudo.textContent.trim();
+    const paragrafos = textoCru.split(/\r?\n/);
+    conteudo.innerHTML = paragrafos
+      .map(linha => `<p>${linha.trim()}</p>`)
+      .join('');
+  }
+});

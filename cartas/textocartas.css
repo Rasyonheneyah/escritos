@@ -1,0 +1,23 @@
+.fitcontent{
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+p{
+    text-indent: 10%;
+}
+.referencia {
+  font-size: 0.85em;
+  color: #666;
+  font-style: italic;
+  opacity: 0.85;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  transition: opacity 0.3s ease;
+
+}
+
+.referencia:hover {
+  opacity: 1;
+}

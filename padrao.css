@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(variaveis.css);
+
 /* ASTERISCO * SELETOR UNIVERSAL*/
 *{
     margin: 0;
@@ -187,7 +189,7 @@ nav > ul > li{
 
 /*CORES DE Hs*/
 .historia{
-    color: var(--cinza-historias);
+    color: #3C4E59;
 }
 .poema{
     color: var(--verde-militar);

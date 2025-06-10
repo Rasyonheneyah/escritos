@@ -33,6 +33,7 @@
     cursor: pointer;
     text-align: center;
     position: relative;
+    margin: 10px;
   }
 
   /* Linhas para pais e mães */
@@ -160,9 +161,89 @@
   <!-- Judá -->
   <div class="node" onclick="showInfo('Judá')">Judá</div>
 
-  <!-- Davi -->
+  
+  <!-- Perez (filho de Judá) -->
   <div class="line-down"></div>
-  <div class="node" onclick="showInfo('Davi')">Rei Davi</div>
+  <div class="node" onclick="showInfo('Perez')">Perez</div>
+
+<!-- Esrom, Arão, Aminadabe, Naassom, Salmom -->
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Esrom')">Esrom</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Arão')">Arão</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Aminadabe')">Aminadabe</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Naassom')">Naassom</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Salmom')">Salmom</div>
+
+<!-- Boaz e Rute -->
+<div class="generation">
+  <div class="node" onclick="showInfo('Boaz')">Boaz</div>
+  <div class="node" onclick="showInfo('Rute')">Rute</div>
+</div>
+<div class="connector">
+  <div class="line-vertical father"></div>
+  <div class="line-vertical mother"></div>
+</div>
+
+<!-- Obede, Jessé -->
+<div class="node" onclick="showInfo('Obede')">Obede</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Jessé')">Jessé</div>
+<div class="line-down"></div>
+<!-- Davi já está no seu código -->
+<!-- Davi -->
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Davi')">Rei Davi</div>
+
+<!-- Salomão -->
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Salomão')">Salomão</div>
+
+<!-- Roboão, Abias, Asa, Josafá -->
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Roboão')">Roboão</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Abias')">Abias</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Asa')">Asa</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Josafá')">Josafá</div>
+
+<!-- ... continue com Jorão, Uzias, Jotão, Acaz, Ezequias, Manassés, Amom, Josias -->
+
+<!-- Jeconias (exílio babilônico), Salatiel, Zorobabel -->
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Jeconias')">Jeconias</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Salatiel')">Salatiel</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Zorobabel')">Zorobabel</div>
+
+<!-- Abiúde, Eliaquim, Azor, Sadoque, Aquim, Eliúde, Eleazar, Matã, Jacó -->
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Abiúde')">Abiúde</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Eliaquim')">Eliaquim</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Azor')">Azor</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Sadoque')">Sadoque</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Aquim')">Aquim</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Eliúde')">Eliúde</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Eleazar')">Eleazar</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Matã')">Matã</div>
+<div class="line-down"></div>
+<div class="node" onclick="showInfo('Jacó')">Jacó (pai de José)</div>
+
+<!-- José e Maria (já estão no seu código) -->
+<!-- Jesus (já está no seu código) -->
 
   <!-- José e Maria -->
   <div class="generation">
@@ -188,22 +269,61 @@
 <script>
 function showInfo(name) {
   const info = {
-    'Adão': 'Adão - Primeiro homem criado por Deus.',
-    'Eva': 'Eva - Primeira mulher criada por Deus.',
-    'Sete': 'Sete - Filho de Adão e Eva.',
-    'Enos': 'Enos - Filho de Sete.',
-    'Noé': 'Noé - Justo, salvou-se do dilúvio.',
-    'Abraão': 'Abraão - Pai da fé, fez aliança com Deus.',
-    'Sara': 'Sara - Esposa de Abraão, mãe de Isaque.',
-    'Isaque': 'Isaque - Filho da promessa de Abraão e Sara.',
-    'Jacó': 'Jacó - Filho de Isaque, teve 12 filhos que formaram as tribos de Israel.',
-    'Raquel': 'Raquel - Esposa amada de Jacó, mãe de José e Benjamim.',
-    'Judá': 'Judá - Um dos filhos de Jacó, de quem descende Davi.',
-    'Davi': 'Rei Davi - Rei de Israel, da sua descendência vem o Messias.',
-    'José': 'José - Marido de Maria, descendente de Davi.',
-    'Maria': 'Maria - Mãe de Jesus, escolhida por Deus.',
-    'Jesus': 'Jesus - Filho de Deus, Salvador da humanidade.'
-  };
+  'Adão': 'Adão - Primeiro homem criado por Deus (Gênesis 2:7). Deu nome aos animais e foi expulso do Éden após comer do fruto proibido (Gênesis 3).',
+  'Eva': 'Eva - Primeira mulher, criada a partir da costela de Adão (Gênesis 2:22). Enganada pela serpente, comeu do fruto proibido (Gênesis 3).',
+  'Sete': 'Sete - Filho de Adão e Eva, nascido após Abel. Sua linhagem é a que chega até Noé (Gênesis 4:25; 5:3).',
+  'Enos': 'Enos - Filho de Sete. "Foi nesse tempo que se começou a invocar o nome do Senhor" (Gênesis 4:26).',
+  'Noé': 'Noé - Justo e íntegro, construiu a arca por ordem de Deus e sobreviveu ao dilúvio com sua família (Gênesis 6–9).',
+  'Abraão': 'Abraão - Chamado por Deus para sair de sua terra e ser pai de uma grande nação (Gênesis 12). Deus fez aliança com ele (Gênesis 15) e prometeu-lhe descendência incontável (Gênesis 17).',
+  'Sara': 'Sara - Esposa de Abraão. Deu à luz Isaque aos 90 anos por promessa de Deus (Gênesis 18:10; 21:1-3).',
+  'Isaque': 'Isaque - Filho da promessa (Gênesis 21). Quase foi sacrificado por Abraão em obediência a Deus (Gênesis 22). Casou-se com Rebeca (Gênesis 24).',
+  'Jacó': 'Jacó - Filho de Isaque, irmão de Esaú. Recebeu a bênção da primogenitura (Gênesis 27), teve 12 filhos e lutou com um anjo (Gênesis 32), sendo renomeado Israel.',
+  'Raquel': 'Raquel - Esposa preferida de Jacó. Mãe de José e Benjamim. Morreu ao dar à luz (Gênesis 35:16-20).',
+  'Judá': 'Judá - Um dos 12 filhos de Jacó. Pai de Perez (Gênesis 38). A tribo de Judá deu origem à linhagem real (1 Crônicas 5:2).',
+  'Davi': 'Rei Davi - Pastor que derrotou Golias (1 Samuel 17), ungido por Samuel (1 Samuel 16), tornou-se o segundo rei de Israel. Deus prometeu que o Messias viria de sua linhagem (2 Samuel 7:12-16).',
+  'José': 'José - Descendente de Davi (Mateus 1:16), marido de Maria. Foi avisado por anjo em sonho para proteger Jesus (Mateus 1:20-24).',
+  'Maria': 'Maria - Virgem escolhida por Deus para ser mãe de Jesus (Lucas 1:26-38). Cantou o Magnificat (Lucas 1:46-55).',
+  'Jesus': 'Jesus - Filho de Deus, nascido em Belém (Lucas 2), cumpriu as profecias do Messias, realizou milagres, morreu e ressuscitou (Mateus, Marcos, Lucas, João).',
+
+
+
+ 'Perez': 'Perez - Filho de Judá e Tamar (Gênesis 38:29). É um dos ancestrais diretos de Davi e, portanto, de Jesus (Rute 4:18; Mateus 1:3).',
+  'Esrom': 'Esrom/Hezrom - Filho de Perez (Rute 4:18; 1 Crônicas 2:5). Patriarca da linhagem messiânica.',
+  'Arão': 'Arão (ou Ram) - Filho de Hezrom (Rute 4:19). Também chamado de Arão em algumas traduções. Antepassado de Davi e Jesus.',
+  'Aminadabe': 'Aminadabe - Filho de Arão, ancestral de Boaz e de Davi (Rute 4:19-20). Aparece também em Êxodo 6:23 como sogro de Arão, irmão de Moisés, mas são pessoas diferentes com o mesmo nome.',
+  'Naassom': 'Naassom - Filho de Aminadabe. Príncipe da tribo de Judá no tempo do Êxodo (Números 1:7). Pai de Salmom (Mateus 1:4).',
+  'Salmom': 'Salmom - Pai de Boaz, casou-se com Raabe (Mateus 1:5), a mulher que ajudou os espiões em Jericó (Josué 2).',
+  'Boaz': 'Boaz - Rico e justo de Belém. Casou-se com Rute e foi bisavô de Davi (Rute 4:13-22).',
+  'Rute': 'Rute - Moabita que se tornou bisavó do rei Davi. Livro de Rute capítulos 1 a 4: história de fidelidade e fé. Casou-se com Boaz e entrou na linhagem messiânica.',
+  
+  'Obede': 'Obede - Filho de Boaz e Rute. Pai de Jessé, avô do rei Davi (Rute 4:21-22).',
+  'Jessé': 'Jessé - Pai do rei Davi (1 Samuel 16:1). Deus o escolheu como tronco da linhagem messiânica (Isaías 11:1).',
+  'Salomão': 'Salomão - Filho de Davi e Bate-Seba. Famoso por sua sabedoria (1 Reis 3). Construiu o Templo em Jerusalém (1 Reis 6).',
+  'Roboão': 'Roboão - Filho de Salomão. Foi o primeiro rei de Judá após a divisão do reino (1 Reis 12).',
+  'Abias': 'Abias - Filho de Roboão. Reinou em Judá por três anos (1 Reis 15:1–8).',
+  'Asa': 'Asa - Rei de Judá. Fez o que era reto aos olhos do Senhor, reformando a religião (1 Reis 15:9–24).',
+  'Josafá': 'Josafá - Filho de Asa. Reinou com justiça, buscou a Deus e fortaleceu o reino (2 Crônicas 17–20).',
+  'Jorão': 'Jorão - Também chamado Jeorão. Rei de Judá (2 Reis 8:16-24), casou-se com a filha de Acabe, o que trouxe idolatria.',
+  'Uzias': 'Uzias - Também chamado Azarias (2 Reis 15:1). Foi um rei de Judá que inicialmente fez o que era reto, mas foi punido com lepra por desobedecer (2 Crônicas 26).',
+  'Jotão': 'Jotão - Filho de Uzias. Rei de Judá que governou com justiça (2 Reis 15:32–38).',
+  'Acaz': 'Acaz - Rei perverso de Judá, praticou idolatria e sacrificou seus filhos (2 Reis 16).',
+  'Ezequias': 'Ezequias - Rei piedoso de Judá. Orou a Deus quando Jerusalém foi ameaçada pela Assíria (2 Reis 18–20).',
+  'Manassés': 'Manassés - Inicialmente rei muito perverso, mas se arrependeu no fim de sua vida (2 Reis 21; 2 Crônicas 33).',
+  'Amom': 'Amom - Filho de Manassés. Reinou apenas dois anos, foi assassinado (2 Reis 21:19–26).',
+  'Josias': 'Josias - Rei justo que restaurou a Lei e o culto verdadeiro (2 Reis 22–23). Descobriu o Livro da Lei no templo.',
+  'Jeconias': 'Jeconias - Também chamado Joaquim. Levado cativo à Babilônia (2 Reis 24:6–15). Um dos últimos reis de Judá antes do exílio.',
+  'Salatiel': 'Salatiel - Filho de Jeconias. Pai de Zorobabel (Esdras 3:2). Viveu no exílio babilônico.',
+  'Zorobabel': 'Zorobabel - Líder do povo na reconstrução do templo após o exílio (Esdras 3:2; Zacarias 4:6-10).',
+  'Abiúde': 'Abiúde - Descendente de Zorobabel (Mateus 1:13). Não aparece em outras partes da Bíblia fora da genealogia.',
+  'Eliaquim': 'Eliakim/Eliaquim - Filho de Abiúde (Mateus 1:13). Só é mencionado na genealogia.',
+  'Azor': 'Azor - Descendente de Eliakim. Também apenas citado na genealogia (Mateus 1:13).',
+  'Sadoque': 'Sadoque/Zadoque - Descendente de Azor. Nome semelhante ao de um sumo sacerdote do tempo de Davi, mas provavelmente outro homem.',
+  'Aquim': 'Aquim - Filho de Zadoque. Nome citado apenas na genealogia (Mateus 1:14).',
+  'Eliúde': 'Eliúde - Filho de Aquim, também só conhecido pela genealogia de Mateus.',
+  'Eleazar': 'Eleazar - Filho de Eliúde. Apenas mencionado em Mateus 1:15.',
+  'Matã': 'Matã - Pai de Jacó (Mateus 1:15). Só aparece na genealogia.',
+  'Jacó': 'Jacó - Pai de José, marido de Maria (Mateus 1:16). Só mencionado na genealogia.'
+};
   document.getElementById('infoContent').innerText = info[name] || 'Sem informações.';
   document.getElementById('infoBox').style.display = 'block';
 }

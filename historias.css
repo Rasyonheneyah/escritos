@@ -51,6 +51,10 @@ main{
     width: 100%;
 }
 
+#tituloheader{
+    font-size: 160%;
+}
+
 h1{
     font-family: 'Medieval Sharp';
     font-size: 280%;

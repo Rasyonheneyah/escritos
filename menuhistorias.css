@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+
+body{
+    background-color:#F5DEB3 ;
+}
+
+main {
+    background-color:#EAE3D2 ;
+    width: 90%;
+    margin: auto;
+    height: max-content;
+    box-shadow: 1px 1px 3px #0000006c;
+    border-radius: 25px;
+    padding: 2.75%;
+}
+
+
+h1{
+    color: #5D4A66;
+    text-align: center;
+    font-size: 325%;
+    margin: 5px;
+    font-family: 'Medieval Sharp'; ;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px #5D4A6694;
+}
+h2{
+    font-size: 130%;
+    font-family: 'Medieval Sharp'; ;
+    text-shadow: 1px 2px 3px #0000009c;
+    color: #3C4E59;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 2%;
+}
+
+h3{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Medieval Sharp'; ;
+    color: #4C5B5C;
+}
+main p{
+    font-size: 18px;
+    text-indent: 3em;
+    padding: 0 2%;
+}
+
+
+.listhistoria{
+    list-style-type: none;
+}
+.caixadehistorias{
+    width: 100%;
+    margin: auto;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+.hr80{
+    width: 90%;
+    margin: 25px 5%;
+}
+
+
+.caixadecapitulos{
+    height: fit-content; /* Ajusta a altura do elemento para caber o conteúdo */
+    gap: 5.0%;
+    display: flex;
+    flex-direction: vertical;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 100%;
+}
+/*tabela de arcos e capítulos*/
+caption{
+    font-size: 150%;
+    font-weight: bold;
+    color: #3C4E59;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+table {
+    box-shadow: 1px 1px 2px #00000052;
+    margin-bottom: 20px;
+}
+
+.tabela_capitulos {
+    overflow: visible;
+    width: 95%;
+    height: fit-content;
+}
+
+.tabela_capitulos table {
+    border: 2.0px solid #b17c2e;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabela_capitulos caption {
+    caption-side: top;
+    text-align: left;
+    
+}
+
+.tabela_capitulos th {
+    border: 1px solid #767B46;
+    background-color: #C19A6B;
+    color: #5D4A66;
+    padding: 5px;
+    font-size: 120%;
+}
+
+.tabela_capitulos td {
+    border: 1px solid #767B46;
+    background-color: #D2B48C;
+    color: #767B46;
+    padding: 5px;
+    font-weight: bold;
+}
+
+td>div>a{
+    color:#767B46;
+}
+td>div>a:hover{
+    text-decoration: none;
+    color:#9B4842 ;
+}
+
+.imagem{
+    border-radius: 1%;
+    border: 1.0px solid #DAA520 ;
+    box-shadow: 1px 1px 15px #daa5209a;
+    margin: 0 auto; /*Para centralizar*/
+    display: block; /*Para centralizar*/
+
+}
+.imagem:hover{
+    box-shadow: 1px 1px 15px #DAA520;
+    transform: scale(1.025); /*Aumenta a imagem*/
+    transition: all 0.5s ease-in-out; /*Transição suave*/
+    cursor: pointer; /*Muda o cursor para a mãozinha*/
+}
+
+@media screen and (min-width: 1024px){
+    .tabela_capitulos{
+        width: 40%;
+    }
+
+    main{
+        width: 70%;
+    }
+}

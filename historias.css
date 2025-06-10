@@ -1,24 +1,5 @@
 @charset "UTF-8";
-@font-face {
-    font-family: 'Medieval Sharp';
-    src: url(./fontes/MedievalSharp-Regular.ttf);
-}
-@font-face {
-    font-family: 'Titulos';
-    src: url(fontes/Cinzel-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: 'Cursiva' ;
-    src: url(fontes/GreatVibes-Regular.ttf);
-}
-@font-face {
-    font-family: 'Texto';
-    src: url(fontes/PlayfairDisplay-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: 'Dialogo';
-    src: url(fontes/PlayfairDisplay-Italic-VariableFont_wght.ttf);
-}
+
 
 
 
@@ -31,6 +12,7 @@ body {
 }
 header{
     position: absolute;
+
 }
 
 main{
@@ -43,7 +25,10 @@ main{
 
 .hr{
     width: 80%;
+    margin: 5px auto;
 }
+
+
 #titulohistoria{
     display: block;
     margin: 0;
@@ -54,27 +39,20 @@ main{
 #tituloheader{
     font-size: 160%;
 }
+#hamburguer{
+    font-size: 140%;
+}
 
 h1{
-    font-family: 'Medieval Sharp';
+    font-family:  var(--fonte-medieval);
     font-size: 280%;
     color: #5D4A66;
     text-align: center;
     margin: 0;
     padding: 7.5% 0;
     text-shadow: 1px 1px 3px #000000;
-
-
 }
-h2{
-    font-family: 'Titulos';
-    font-size: 40px;
-    color: #3C4E59;
-    text-align: center;
-    margin: 0;
-    padding: 40px 0 30px;
-    text-shadow: 1px 1px 3px #000000b7;
-}
+
 
 p{
   font-size: 20px;
@@ -98,7 +76,7 @@ p{
     border-radius: 10px;
     border: 2.0px solid #000;
     display: block;
-    margin: auto;
+    margin: 30px auto;
     box-shadow: 1px 1px 3px #0000006c;
 
 }

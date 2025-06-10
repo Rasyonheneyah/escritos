@@ -17,19 +17,19 @@ main {
 
 
 h1{
-    color: #5D4A66;
+    color: var(--roxo-nobreza);
     text-align: center;
     font-size: 325%;
     margin: 5px;
-    font-family: 'Medieval Sharp'; ;
+    font-family: var(--fonte-medieval) ;
     font-weight: bolder;
     text-shadow: 1px 1px 3px #5D4A6694;
 }
 h2{
-    font-size: 130%;
-    font-family: 'Medieval Sharp'; ;
+    font-size: 175%;
+    font-family:  var(--fonte-medieval);
     text-shadow: 1px 2px 3px #0000009c;
-    color: #3C4E59;
+    color: var(--cinza-historias);
     text-align: center;
     padding: 0;
     margin: 0 0 2%;
@@ -38,8 +38,7 @@ h2{
 h3{
     text-align: center;
     font-size: 200%;
-    font-family: 'Medieval Sharp'; ;
-    color: #4C5B5C;
+    color: var(--azul-acinzentado);
 }
 main p{
     font-size: 18px;
@@ -84,9 +83,9 @@ ul{
 caption{
     font-size: 150%;
     font-weight: bold;
-    color: #3C4E59;
+    color: var(--cinza-historias);
     text-align: left;
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0 ;
 }
 
 table {
@@ -101,7 +100,7 @@ table {
 }
 
 .tabela_capitulos table {
-    border: 2.0px solid #b17c2e;
+    border: 2.0px solid var(--marrom-titulos);
     height: 100%;
     width: 100%;
     table-layout: auto;
@@ -116,23 +115,23 @@ table {
 }
 
 .tabela_capitulos th {
-    border: 1px solid #767B46;
+    border: 1px solid var(--verde-militar);
     background-color: #C19A6B;
-    color: #5D4A66;
+    color: var(--roxo-nobreza);
     padding: 5px;
     font-size: 120%;
 }
 
 .tabela_capitulos td {
-    border: 1px solid #767B46;
+    border: 1px solid var(--verde-militar);
     background-color: #D2B48C;
-    color: #767B46;
+    color: var(--verde-militar);
     padding: 5px;
     font-weight: bold;
 }
 
 td>div>a{
-    color:#767B46;
+    color:  var(--verde-militar);
 }
 td>div>a:hover{
     text-decoration: none;
@@ -141,14 +140,15 @@ td>div>a:hover{
 
 .imagem{
     border-radius: 1%;
-    border: 1.0px solid #DAA520 ;
+    border: 1.0px solid var(--dourado) ;
     box-shadow: 1px 1px 15px #daa5209a;
-    margin: 0 auto; /*Para centralizar*/
+    margin: auto; /*Para centralizar*/
     display: block; /*Para centralizar*/
-
+    margin: 15px auto;
+   
 }
 .imagem:hover{
-    box-shadow: 1px 1px 15px #DAA520;
+    box-shadow: 1px 1px 15px var(--dourado);
     transform: scale(1.025); /*Aumenta a imagem*/
     transition: all 0.5s ease-in-out; /*Transição suave*/
     cursor: pointer; /*Muda o cursor para a mãozinha*/

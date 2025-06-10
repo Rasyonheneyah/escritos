@@ -1,35 +1,4 @@
 @charset "UTF-8";
-
-/*--- Paleta de Cores ---
-
-Fundo principal	Marrom escuro	#3B2F2F	Fundo tipo couro envelhecido
-Fundo secundário	Madeira queimada	#4B3621	Pra áreas destacadas (menus, rodapé)
-Blocos/caixas	Marrom amarelado	#6B4F3B	Caixa de conteúdo
-Texto principal	Pergaminho claro	#F5DEB3	Bem legível e estiloso
-Título/destaques	Ouro envelhecido	#C19A6B	Brilha sem ser chamativo
-Acento forte (botões)	Castanho avermelhado	#8B4513	icônico
-Linha/sombra leve	Bege escuro	#A67B5B	Ajuda a destacar sem pesar
-Link ativo	Azul fosco	#4C5B5C	Um azul acinzentado que combina bem
-Verde oliva seco	#767B46	Parece tecido militar antigo ou tapeçaria medieval
-Areia envelhecida	#D2B48C	Um tom claro, suave, perfeito pra contrastes leves ou fundo de textos
-Caramelo queimado	#A0522D	Lembra couro tratado, ótimo pra botões ou links
-Azul tempestade	#3C4E59	Azul profundo, dá um ar mais misterioso e medieval
-Violeta desbotado	#5D4A66	Traz nobreza, ótimo pra detalhes em brasões, ícones ou rodapés
-Marfim sujo	#EAE3D2	Ideal pra planos de fundo “tipo pergaminho usado”
-Vermelho barro	#9B4842	Forte, terroso e com personalidade, bom pra destaques mais dramáticos
-Vermelho mais forte #9B1B30
-Petróleo suave	#4A5A50	Um verde-azulado frio, usado em sombras ou menus laterais
-Bronze fosco	#B08D57	Mais claro que o dourado comum, ótimo pra ícones ou bordas
-Marrom titulo #b17c2e
-*/
-
-@font-face {
-    font-family: 'Medieval Sharp';
-    src: url(./fontes/MedievalSharp-Regular.ttf);
-}
-
-
-
 body{
     background-color:#F5DEB3 ;
     width: 100%;
@@ -47,11 +16,11 @@ main {
 
 
 h1{
-    color: #5D4A66;
+    color: VAR(--roxo-nobreza);
     text-align: center;
     font-size: 350%;
     margin: 5px;
-    font-family: 'Medieval Sharp'; ;
+    font-family: var(--fonte-medieval) ;
     font-weight: bolder;
     text-shadow: 1px 1px 3px #5D4A6694;
 }
@@ -59,20 +28,20 @@ h1{
 h2{
     text-align: center;
     font-size: 325%;
-    font-family: 'Medieval Sharp'; ;
+    font-family: var(--fonte-medieval) ;
     text-shadow: 1px 2px 3px #0000009c;
 }
 
 h2:hover{
-    color: #5D4A66;
+    color: VAR(--roxo-nobreza);
     cursor: pointer; /*Muda o cursor para a mãozinha*/
 }
 
 h3{
     text-align: center;
     font-size: 300%;
-    font-family: 'Medieval Sharp'; ;
-    color: #4C5B5C;
+    font-family: var(--fonte-medieval) ;
+    color: var(--azul-acinzentado);
 }
 
 main p{ /*o espaço é para aplicar nos P que tão no MAIN*/
@@ -85,20 +54,7 @@ p>a{
     color: #9e6f29;
 }
 
-.imagem{
-    border-radius: 1%;
-    border: 3.0px solid #DAA520 ;
-    box-shadow: 1px 1px 15px #daa5209a;
-    margin: 0 auto; /*Para centralizar*/
-    display: block; /*Para centralizar*/
 
-}
-.imagem:hover{
-    box-shadow: 1px 1px 15px #DAA520;
-    transform: scale(1.025); /*Aumenta a imagem*/
-    transition: all 0.5s ease-in-out; /*Transição suave*/
-    cursor: pointer; /*Muda o cursor para a mãozinha*/
-}
 
 
 

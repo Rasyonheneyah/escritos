@@ -1,33 +1,10 @@
 @charset "UTF-8";
-/*--- Paleta de Cores ---
 
-Fundo principal	Marrom escuro	#3B2F2F	Fundo tipo couro envelhecido
-Fundo secundário	Madeira queimada	#4B3621	Pra áreas destacadas (menus, rodapé)
-Blocos/caixas	Marrom amarelado	#6B4F3B	Caixa de conteúdo
-Texto principal	Pergaminho claro	#F5DEB3	Bem legível e estiloso
-Título/destaques	Ouro envelhecido	#C19A6B	Brilha sem ser chamativo
-Acento forte (botões)	Castanho avermelhado	#8B4513	icônico
-Linha/sombra leve	Bege escuro	#A67B5B	Ajuda a destacar sem pesar
-Link ativo	Azul fosco	#4C5B5C	Um azul acinzentado que combina bem
-Verde oliva seco	#767B46	Parece tecido militar antigo ou tapeçaria medieval
-Areia envelhecida	#D2B48C	Um tom claro, suave, perfeito pra contrastes leves ou fundo de textos
-Caramelo queimado	#A0522D	Lembra couro tratado, ótimo pra botões ou links
-Azul tempestade	#3C4E59	Azul profundo, dá um ar mais misterioso e medieval
-Violeta desbotado	#5D4A66	Traz nobreza, ótimo pra detalhes em brasões, ícones ou rodapés
-Marfim sujo	#EAE3D2	Ideal pra planos de fundo “tipo pergaminho usado”
-Vermelho barro	#9B4842	Forte, terroso e com personalidade, bom pra destaques mais dramáticos
-Vermelho mais forte #9B1B30
-Petróleo suave	#4A5A50	Um verde-azulado frio, usado em sombras ou menus laterais
-Bronze fosco	#B08D57	Mais claro que o dourado comum, ótimo pra ícones ou bordas
-Marrom titulo #b17c2e
-*/
-/*--- Fontes ---*/
-@font-face {
-    font-family: 'Medieval Sharp';
-    src: url(./fontes/MedievalSharp-Regular.ttf);
+/* ASTERISCO * SELETOR UNIVERSAL*/
+*{
+    margin: 0;
+    padding: 0;
 }
-
-
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -46,7 +23,7 @@ header, footer{
 
 /* HEADER */
 header{
-    background-color: #767B46;
+    background-color: var(--verde-militar); /* var(--verde-militar) */
     top: 0;
     position: fixed; /*Vai junto quando for para baixo*/
     height: 60px; /*Tamanho que parece razoável*/
@@ -65,7 +42,7 @@ nav a{
 }
 
 nav > ul{
-    background-color: #5D4A66;
+    background-color: var(--roxo-nobreza);
     list-style: none; /*Tira os pontos*/
     margin: 0; /*Tira a margem*/
     gap: 5px; /*Espaçamento entre os LIS, os botões*/
@@ -95,9 +72,9 @@ nav > ul > li{
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    background-color: #5D4A66;
+    background-color: var(--roxo-nobreza);
     color: #9e6f29;
-    box-shadow: 1px 1px 3px #5D4A668a;
+    box-shadow: 1px 1px 3px var(--roxo-nobreza)8a;
     gap: 10px; /*Espaço entre o ícone do botão e o texto*/
 }
 
@@ -111,7 +88,7 @@ nav > ul > li{
 /* ☰ = hamburguer */
 #hamburguer{
     font-size: 200%;
-    color: #b17c2e;
+    color: var(--marrom-titulos);
     padding: 0px 10px; /*espaço para nao ficar coladona esquerda*/
     background-color: #6c7240a2;
     border: 0;
@@ -123,7 +100,7 @@ nav > ul > li{
 
 #hamburguer:active{
     text-decoration: none;
-    color: #b17c2e;
+    color: var(--marrom-titulos);
 }
 
 #hamburguer:hover{
@@ -167,9 +144,9 @@ nav > ul > li{
 }
 
 #tituloheader{
-    font-family: 'Medieval Sharp';
+    font-family:  var(--fonte-medieval);
     font-size: 175% ;
-    color: #b17c2e;
+    color: var(--marrom-titulos);
     text-shadow: 1px 1px 1px #4b3621d5;
     width: 100%;
     margin: 0px 2%; 
@@ -210,10 +187,10 @@ nav > ul > li{
 
 /*CORES DE Hs*/
 .historia{
-    color: #3C4E59;
+    color: var(--cinza-historias);
 }
 .poema{
-    color: #767B46;
+    color: var(--verde-militar);
 }
 .carta{
     color: #A0522D;
@@ -234,7 +211,7 @@ a:visited{
 /*Footer*/
 
 footer{
-    background-color: #5D4A66;
+    background-color: var(--roxo-nobreza);
     bottom:0;
     height: 150px;
     width: 100%;
@@ -252,7 +229,7 @@ footer{
 
 footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
     font-size: 18px;
-    color: #DAA520;
+    color: var(--dourado);
     margin: 0;
     text-indent: 2px;
 }

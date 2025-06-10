@@ -30,6 +30,29 @@
    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2907072512188971"
      crossorigin="anonymous"></script>
+
+     <style>
+        .containerautor {
+            display: flex;
+            align-items: center; /* Alinha verticalmente no centro */
+            gap: 5px;            /* Espaço entre a imagem e o texto */
+            
+
+            }
+
+        .imagem{
+            margin: 2px;
+            display: inline-block;
+            width: 25%;
+            border: 1px solid #ccc;
+        }
+
+        .texto {    
+            margin: 1px;
+            width: 65%;
+            display: inline-block;
+        }
+     </style>
 </head>
 <body>
     <header>
@@ -57,14 +80,16 @@
     <div id="espacoentre"></div>
     
     <main><article>
-        
-            <div id="container">
-                <div id="containerautor">
-                    <h1>Sobre o Autor</h1>
-                    <p>Olá, bem vindo ao meu site!  Sou Rasyon Heneyah, é o meu pseudônimo de escritor, meu verdadeiro nome é Misael, atualmente estou cursando Sistemas de Informação. Gosto de ler (preciso ler mais), escrever e programar (tem uns momentos que é complicado), você encontrará conteúdo meu do mais variado tipo neste site que criei.</p>
-                    <p>Além de escritor, também sou um defensor da educação efetiva e do conhecimento sólido, acreditando que a leitura e a reflexão são fundamentais para o crescimento pessoal e espiritual. </p>
+        <h1>Sobre o Autor</h1>
+
+            <div id="containerautor">
+                    <div class="texto">
+                        <p>Olá, bem vindo ao meu site!  Sou Rasyon Heneyah, é o meu pseudônimo de escritor, meu verdadeiro nome é Misael, atualmente estou cursando Sistemas de Informação. Gosto de ler (preciso ler mais), escrever e programar (tem uns momentos que é complicado), você encontrará conteúdo meu do mais variado tipo neste site que criei.</p>
+                        <p>Além de escritor, também sou um defensor da educação efetiva e do conhecimento sólido, acreditando que a leitura e a reflexão são fundamentais para o crescimento pessoal e espiritual. </p>
+                    </div>
+                        
+                        <img class="imagem" src="#" alt="">
                     
-                </div>
             </div>
             <div id="containerredes">
                 <h4>Redes Sociais</h4>

@@ -6,30 +6,38 @@
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/index.html</loc>
   </url>
+ <!--Histórias-->
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/historias.html</loc>
   </url>
+<!-- OCR-->
   <url>
-    <loc>https://rasyonheneyah.github.io/escritos/ocr.html</loc>
+    <loc>https://rasyonheneyah.github.io/escritos/historias/ocr.html</loc>
+  </url>
+<!--OCR ARCO 01-->
+  <url>
+    <loc>https://rasyonheneyah.github.io/escritos/historias/ocr/01-c01.html</loc>
   </url>
   <url>
-    <loc>https://rasyonheneyah.github.io/escritos/ocr-01-c01.html</loc>
+    <loc>https://rasyonheneyah.github.io/escritos/historias/ocr/01-c02.html</loc>
   </url>
   <url>
-    <loc>https://rasyonheneyah.github.io/escritos/ocr-01-c02.html</loc>
+    <loc>https://rasyonheneyah.github.io/escritos/historias/ocr/01-c02.html</loc>
   </url>
-  <url>
-    <loc>https://rasyonheneyah.github.io/escritos/ocr-01-c02.html</loc>
-  </url>
-  <url>
-    <loc>https://rasyonheneyah.github.io/escritos/ocr-01-c03.html</loc>
-  </url>
+
+<!-- Poemas-->
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/poemas.html</loc>
   </url>
+
+<!--Cartas-->
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/cartas.html</loc>
   </url>
+  <url>
+    <loc>https://rasyonheneyah.github.io/escritos/cartas/pascoa2025.html</loc>
+  </url>
+  
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/genealogia.html</loc>
   </url>

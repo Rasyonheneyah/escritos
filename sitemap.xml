@@ -22,7 +22,7 @@
     <loc>https://rasyonheneyah.github.io/escritos/historias/ocr/01-c02.html</loc>
   </url>
   <url>
-    <loc>https://rasyonheneyah.github.io/escritos/historias/ocr/01-c02.html</loc>
+    <loc>https://rasyonheneyah.github.io/escritos/historias/ocr/01-c03.html</loc>
   </url>
 
 <!-- Poemas-->
@@ -35,8 +35,14 @@
     <loc>https://rasyonheneyah.github.io/escritos/cartas.html</loc>
   </url>
   <url>
-    <loc>https://rasyonheneyah.github.io/escritos/cartas/pascoa2025.html</loc>
+    <loc>https://rasyonheneyah.github.io/escritos/cartas/apologetica/002.html</loc>
   </url>
+<url>
+  <loc>https://rasyonheneyah.github.io/escritos/cartas/apologetica/001.html</loc>
+</url>
+<url>
+  <loc>https://rasyonheneyah.github.io/escritos/cartas/apologetica/002.html</loc>
+</url>
   
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/genealogia.html</loc>
@@ -44,5 +50,12 @@
   <url>
     <loc>https://rasyonheneyah.github.io/escritos/autor.html</loc>
   </url>
+
+<url>
+  <loc></loc>
+</url>
+<url>
+  <loc></loc>
+</url>
 
 </urlset>

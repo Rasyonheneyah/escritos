@@ -11,32 +11,14 @@ function toggleMenu() {
     menu.classList.toggle('show');
 }
 
-// Fechar o menu se clicar fora
-document.addEventListener('click', function(event) {
-    const isClickInsideMenu = menu.contains(event.target);
-    const isClickOnButton = botaoHamburguer.contains(event.target);
-
-    if (!isClickInsideMenu && !isClickOnButton) {
-        menu.classList.remove('show');
-    }
-});
-
-// Impede que o clique no botão propague para o document
-botaoHamburguer.addEventListener('click', function(event) {
-    event.stopPropagation();
-});
-
-
-// Colocar tag p automaticamente nas histórias
 document.addEventListener('DOMContentLoaded', () => {
   const conteudo = document.getElementById("conteudo-cru");
   if (conteudo) {
-    const textoCru = conteudo.textContent.trim();
-
+    const textoCru = conteudo.innerHTML.trim();
     const linhas = textoCru.split(/\r?\n/);
 
     const resultado = linhas.map(linha => {
-      const texto = linha.trim();
+      let texto = linha.trim();
 
       if (!texto) return '';
 
@@ -44,27 +26,46 @@ document.addEventListener('DOMContentLoaded', () => {
         return texto;
       }
 
-      // Referência (fonte menor)
-      if (texto.startsWith('-#')) {
-        const conteudoReferencia = texto.slice(2).trim();
-        return `<p class="referencia">${conteudoReferencia}</p>`;
+      // Citação (-)
+      if (texto.startsWith('-') && !texto.startsWith('-#')) {
+        const conteudoCitacao = aplicarMarkdown(texto.slice(1).trim());
+        return `<p class="citacao">${conteudoCitacao}</p>`;
       }
 
-      // Cena fim
-      if (texto === '[...]') {
-        return `<p class="cenafim">[...]</p>`;
+      // Referência (-#)
+      if (texto.startsWith('-#')) {
+        const conteudoReferencia = aplicarMarkdown(texto.slice(2).trim());
+        return `<p class="referencia">${conteudoReferencia}</p>`;
       }
 
       // Itálico (##)
       if (texto.startsWith('##')) {
-        const conteudoItalico = texto.slice(2).trim();
+        const conteudoItalico = aplicarMarkdown(texto.slice(2).trim());
         return `<p><em>${conteudoItalico}</em></p>`;
       }
 
+      // Título (#)
+      if (texto.startsWith('#')) {
+        const conteudoTitulo = aplicarMarkdown(texto.slice(1).trim());
+        return `<h3>${conteudoTitulo}</h3>`;
+      }
+
+      // Parágrafo comum com markdown
+      texto = aplicarMarkdown(texto);
       return `<p>${texto}</p>`;
     });
 
     conteudo.innerHTML = resultado.join('');
+  }
+
+  // Função para aplicar **negrito** e *itálico*
+  function aplicarMarkdown(texto) {
+        // Links no formato [texto](link)
+    texto = texto.replace(/\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g, '<strong><a href="$2" target="_blank">$1</a></strong>');    // Negrito primeiro (para evitar conflito com itálico)
+    texto = texto.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // Depois itálico
+    texto = texto.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    return texto;
   }
 });
 

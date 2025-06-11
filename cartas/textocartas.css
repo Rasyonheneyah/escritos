@@ -1,12 +1,14 @@
+h3{
+  margin: 10px 0;
+}
+
 .fitcontent{
     width: fit-content;
     height: fit-content;
     
 }
 
-p{
-    text-indent: 10%;
-}
+
 .referencia {
   font-size: 0.85em;
   color: #666;
@@ -20,4 +22,25 @@ p{
 
 .referencia:hover {
   opacity: 1;
+}
+
+a{
+  text-decoration: none;
+  color: #b17c2e ;
+}
+
+.citacao {
+  margin-left: 20%;
+  font-style: italic;
+  color: #666;
+}
+.tam{
+  width: 70%;
+  height: max-content;
+}
+
+@media only screen and (min-width:1024px){
+    .tam{
+      width: max-content;
+    }
 }

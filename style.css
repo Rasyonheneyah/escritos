@@ -46,7 +46,7 @@ h3{
 
 main p{ /*o espaço é para aplicar nos P que tão no MAIN*/
     font-size: 18px;
-    text-indent: 10%;
+    margin: 20px;
 }
 
 p>a{

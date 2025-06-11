@@ -28,6 +28,9 @@ main{
     margin: 5px auto;
 }
 
+hr{
+    margin: 5% 0;
+}
 
 #titulohistoria{
     display: block;
@@ -45,17 +48,26 @@ main{
 
 h1{
     font-family:  var(--fonte-medieval);
-    font-size: 280%;
+    font-size: 325%;
     color: #5D4A66;
     text-align: center;
     margin: 0;
-    padding: 7.5% 0;
+    padding: 5.0% 0;
     text-shadow: 1px 1px 3px #000000;
+}
+h2{
+    font-size: 265%;
+    font-family:  var(--fonte-medieval);
+    text-shadow: 1px 2px 3px #4A5A509c;
+    color: #4A5A50;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 2%;
 }
 
 
 p{
-  font-size: 20px;
+  font-size: 19px;
   margin-bottom: 1.2em; /* Espaço entre parágrafos */
   line-height: 1.6;     /* Espaçamento entre linhas d   */
   text-align: justify;
@@ -151,5 +163,16 @@ p{
         margin:auto;
         width: 50%;
     }
-
+    #tituloheader{
+    font-size: 250%;
+    }
+    h1{
+        font-size: 290%;
+    }
+    h2{
+        font-size: 325%;
+    }
+    p{
+        font-size: 18px;
+    }
 }

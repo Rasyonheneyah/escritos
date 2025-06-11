@@ -41,7 +41,6 @@ h3{
 }
 main p{
     font-size: 18px;
-    text-indent: 3em;
     padding: 0 2%;
 }
 
@@ -64,8 +63,8 @@ ul{
 }
 
 .hr80{
-    width: 90%;
-    margin: 25px 5%;
+    width: 96%;
+    margin: 25px auto;
 }
 
 
@@ -158,6 +157,15 @@ td>div>a:hover{
     }
 
     main{
-        width: 70%;
+        width: 60%;
     }
+
+    h2{
+        font-size: 225%;
+    }
+    
+    .imagem{
+        margin: 20px auto 30px;
+    }
+    
 }

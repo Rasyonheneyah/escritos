@@ -31,7 +31,7 @@ botaoHamburguer.addEventListener('click', function(event) {
 document.addEventListener('DOMContentLoaded', () => {
   const conteudo = document.getElementById("conteudo-cru");
   if (conteudo) {
-    const textoCru = conteudo.textContent.trim();
+    const textoCru = conteudo.innerHTML.trim();
     
     // Divide o texto por linhas (quebra de linha simples ou dupla)
     const paragrafos = textoCru.split(/\r?\n/);

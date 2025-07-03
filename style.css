@@ -42,11 +42,13 @@ h3{
     font-size: 300%;
     font-family: var(--fonte-medieval) ;
     color: var(--azul-acinzentado);
+    
 }
 
 main p{ /*o espaço é para aplicar nos P que tão no MAIN*/
     font-size: 18px;
     margin: 20px;
+    line-height: 1.5em;
 }
 
 p>a{
@@ -74,5 +76,6 @@ p>a{
     }
     main p{
         font-size: 18px;
+
     }
 }

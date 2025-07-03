@@ -289,7 +289,27 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
         height: 50px;
         width: 58px;
     }
+    main p{
+        line-height: 2em;
+        text-indent: 10%;
+    }
 
+}
+
+/* CSS */
+.caixa-de-anuncio {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Para telas maiores (ex: desktops) */
+@media (min-width: 768px) {
+  .caixa-de-anuncio {
+    width: 70%;
+  }
 }
 
     

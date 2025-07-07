@@ -71,6 +71,7 @@ p{
   margin-bottom: 1.2em; /* Espaço entre parágrafos */
   line-height: 1.6;     /* Espaçamento entre linhas d   */
   text-align: justify;
+  text-indent: 0;
 }
 .cenafim{
     font-family: 'Courier New', Courier, monospace;

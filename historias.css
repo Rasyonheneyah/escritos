@@ -88,14 +88,17 @@ main p{
 
 .capa{
     width: 80%;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
     border: 2.0px solid #000;
     display: block;
     margin: 30px auto;
     box-shadow: 1px 1px 3px #0000006c;
-
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
 .capa:hover{
     transform: scale(1.01); /*Aumenta a imagem*/
     transition: all 0.5s ease-in-out; /*Transição suave*/
@@ -178,5 +181,11 @@ main p{
     }
     p{
         font-size: 18px;
+    }
+    
+}
+@media only screen and (min-width: 500px) {
+    .capa{
+        width: 50%;
     }
 }

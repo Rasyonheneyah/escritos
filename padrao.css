@@ -297,7 +297,7 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
 }
 
 .adsense-box {
-  width: 80%;          /* pega 80% da largura do elemento pai */
+  width: 90%;          /* pega 80% da largura do elemento pai */
   margin: 20px auto;   /* centraliza horizontalmente */
   padding: 10px;
   border: 1px solid #ccc;

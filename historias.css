@@ -134,6 +134,7 @@ main p{
       background-color: #fff8dc;
       font-style: italic;
       font-size: 0.95em;
+      border-radius: 2.5px 15px;
   
 }
 
@@ -149,9 +150,8 @@ main p{
 .botao{
     width: 30px;
     vertical-align: middle;
-    border: 1.5px solid #0000007c;
     padding: 7.5px 1px 1px 7.5px;
-    border-radius: 10px;
+    border-radius: 40%;
     background-color:#4c5b5c52;
     align-items: center;
     margin: auto;
@@ -189,3 +189,26 @@ main p{
         width: 50%;
     }
 }
+
+/* 
+--- MODO ESCURO ---
+main p{
+    color: white;
+}
+main, body{
+    background-color: black;
+}
+.botao{
+    color: white;
+    background-color: rgb(136, 132, 132);
+}
+h1, h2{
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.486);
+}
+h1{
+    color: #9B1B30;
+}
+h2{
+    color: #EAE3D2;
+} 
+    */

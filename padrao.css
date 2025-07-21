@@ -296,20 +296,16 @@ footer p{ /*o espaço é para aplicar nos P que tão no FOOTER*/
 
 }
 
-/* CSS */
-.caixa-de-anuncio {
-  width: 90%;
-  margin: 20px auto;
-  background-color: #f0f0f0;
+.adsense-box {
+  width: 80%;          /* pega 80% da largura do elemento pai */
+  margin: 20px auto;   /* centraliza horizontalmente */
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box; /* importante para considerar padding dentro da largura */
+  height: fit-content;
 }
 
-/* Para telas maiores (ex: desktops) */
-@media (min-width: 768px) {
-  .caixa-de-anuncio {
-    width: 70%;
-  }
-}
-
-    

@@ -1,4 +1,4 @@
-# Rasyon
+# Escritos de Rasyon
 
 <img src="https://raw.githubusercontent.com/Rasyonheneyah/escritos/main/logo.png" alt="Ícone Lilivros" width="150"/>
 

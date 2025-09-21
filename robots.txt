@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rasyon.site/escritos/sitemap.xml
+Sitemap: https://rasyon.site/sitemap.xml
